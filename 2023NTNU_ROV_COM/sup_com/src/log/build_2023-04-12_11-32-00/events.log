@@ -1,0 +1,258 @@
+[0.000000] (-) TimerEvent: {}
+[0.000757] (sup_com) JobQueued: {'identifier': 'sup_com', 'dependencies': OrderedDict()}
+[0.000913] (sup_com) JobStarted: {'identifier': 'sup_com'}
+[0.026073] (sup_com) JobProgress: {'identifier': 'sup_com', 'progress': 'cmake'}
+[0.030039] (sup_com) JobProgress: {'identifier': 'sup_com', 'progress': 'build'}
+[0.031329] (sup_com) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/wilhem/NTNU_ROV_COM/sup_com/src/build/sup_com', '--', '-j4', '-l4'], 'cwd': '/home/wilhem/NTNU_ROV_COM/sup_com/src/build/sup_com', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wilhem'), ('LC_TIME', 'nb_NO.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/wilhem'), ('OLDPWD', '/home/wilhem/NTNU_ROV_COM/sup_com'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'nb_NO.UTF-8'), ('SYSTEMD_EXEC_PID', '5852'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/wilhem/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'wilhem'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wilhem'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/wilhem-VirtualBox:@/tmp/.ICE-unix/1089,unix/wilhem-VirtualBox:/tmp/.ICE-unix/1089'), ('LAND', 'en_US.UTF-8'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nb_NO.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2a9a4d66_c7f4_4716_85f9_bb1d6d0bb77d'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'nb_NO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.Z9DE31'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.154'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/wilhem/ros2_ws/install/my_pkg_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nb_NO.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'nb_NO.UTF-8'), ('LC_IDENTIFICATION', 'nb_NO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/wilhem/NTNU_ROV_COM/sup_com/src/build/sup_com'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/wilhem/ros2_ws/install/my_pkg_test/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'nb_NO.UTF-8'), ('LC_PAPER', 'nb_NO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/wilhem/ros2_ws/install/my_pkg_test:/opt/ros/humble')]), 'shell': False}
+[0.100008] (-) TimerEvent: {}
+[0.200346] (-) TimerEvent: {}
+[0.220966] (sup_com) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target listener\x1b[0m\n'}
+[0.223423] (sup_com) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target talker\x1b[0m\n'}
+[0.282671] (sup_com) StdoutLine: {'line': b'[ 50%] Built target masterListener\n'}
+[0.288061] (sup_com) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/talker.dir/src/master_for_demo.cpp.o\x1b[0m\n'}
+[0.288344] (sup_com) StdoutLine: {'line': b'[ 62%] Built target nodeTalker\n'}
+[0.290932] (sup_com) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/listener.dir/src/slave_for_demo.cpp.o\x1b[0m\n'}
+[0.300447] (-) TimerEvent: {}
+[0.401813] (-) TimerEvent: {}
+[0.502225] (-) TimerEvent: {}
+[0.603016] (-) TimerEvent: {}
+[0.703614] (-) TimerEvent: {}
+[0.804263] (-) TimerEvent: {}
+[0.904624] (-) TimerEvent: {}
+[1.005042] (-) TimerEvent: {}
+[1.112050] (-) TimerEvent: {}
+[1.212460] (-) TimerEvent: {}
+[1.314058] (-) TimerEvent: {}
+[1.414494] (-) TimerEvent: {}
+[1.483626] (sup_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/slave_for_demo.cpp:13\x1b[m\x1b[K:\n'}
+[1.484160] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid janusxsdm::connection::sendSimple(std::string)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.484341] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:287:34:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kconst size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst long unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.484468] (sup_com) StderrLine: {'line': b'  287 |                             if(\x1b[01;35m\x1b[Kj != std::string::npos\x1b[m\x1b[K)\n'}
+[1.484580] (sup_com) StderrLine: {'line': b'      |                                \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.484688] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:210:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Knbytes\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.484849] (sup_com) StderrLine: {'line': b'  210 |                 int \x1b[01;35m\x1b[Knbytes\x1b[m\x1b[K;\n'}
+[1.484963] (sup_com) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.485260] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint janusxsdm::connection::decode(int16_t*, std::string&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.485495] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:337:36:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kbuf\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.485790] (sup_com) StderrLine: {'line': b'  337 |     int connection::decode(\x1b[01;35m\x1b[Kint16_t buf[]\x1b[m\x1b[K, std::string &message)\n'}
+[1.485984] (sup_com) StderrLine: {'line': b'      |                            \x1b[01;35m\x1b[K~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[1.486123] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:337:56:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmessage\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.486331] (sup_com) StderrLine: {'line': b'  337 |     int connection::decode(int16_t buf[], \x1b[01;35m\x1b[Kstd::string &message\x1b[m\x1b[K)\n'}
+[1.486470] (sup_com) StderrLine: {'line': b'      |                                           \x1b[01;35m\x1b[K~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[1.486603] (sup_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/master_for_demo.cpp:13\x1b[m\x1b[K:\n'}
+[1.486850] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid janusxsdm::connection::sendSimple(std::string)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.486942] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:287:34:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kconst size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst long unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.487032] (sup_com) StderrLine: {'line': b'  287 |                             if(\x1b[01;35m\x1b[Kj != std::string::npos\x1b[m\x1b[K)\n'}
+[1.487113] (sup_com) StderrLine: {'line': b'      |                                \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.487233] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:210:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Knbytes\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.487379] (sup_com) StderrLine: {'line': b'  210 |                 int \x1b[01;35m\x1b[Knbytes\x1b[m\x1b[K;\n'}
+[1.487743] (sup_com) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.487863] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint janusxsdm::connection::listenSimple(std::string&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.487942] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:436:23:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ksdm_arg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.488038] (sup_com) StderrLine: {'line': b'  436 |                 char* \x1b[01;35m\x1b[Ksdm_arg\x1b[m\x1b[K[] = {arg1, arg2, (char*)scmd.c_str(), NULL};\n'}
+[1.488109] (sup_com) StderrLine: {'line': b'      |                       \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.488266] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint janusxsdm::connection::decode(int16_t*, std::string&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.488425] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:337:36:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kbuf\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.488684] (sup_com) StderrLine: {'line': b'  337 |     int connection::decode(\x1b[01;35m\x1b[Kint16_t buf[]\x1b[m\x1b[K, std::string &message)\n'}
+[1.488774] (sup_com) StderrLine: {'line': b'      |                            \x1b[01;35m\x1b[K~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[1.488844] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:337:56:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmessage\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.488921] (sup_com) StderrLine: {'line': b'  337 |     int connection::decode(int16_t buf[], \x1b[01;35m\x1b[Kstd::string &message\x1b[m\x1b[K)\n'}
+[1.488985] (sup_com) StderrLine: {'line': b'      |                                           \x1b[01;35m\x1b[K~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[1.489048] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:481:30:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kconst size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst long unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.489142] (sup_com) StderrLine: {'line': b'  481 |                         if(\x1b[01;35m\x1b[Kj != std::string::npos\x1b[m\x1b[K)\n'}
+[1.489291] (sup_com) StderrLine: {'line': b'      |                            \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.489775] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint janusxsdm::connection::listenSimple(std::string&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.490019] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:436:23:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ksdm_arg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.490161] (sup_com) StderrLine: {'line': b'  436 |                 char* \x1b[01;35m\x1b[Ksdm_arg\x1b[m\x1b[K[] = {arg1, arg2, (char*)scmd.c_str(), NULL};\n'}
+[1.490304] (sup_com) StderrLine: {'line': b'      |                       \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.491992] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:481:30:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kconst size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst long unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.492310] (sup_com) StderrLine: {'line': b'  481 |                         if(\x1b[01;35m\x1b[Kj != std::string::npos\x1b[m\x1b[K)\n'}
+[1.492421] (sup_com) StderrLine: {'line': b'      |                            \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.515668] (-) TimerEvent: {}
+[1.616173] (-) TimerEvent: {}
+[1.717530] (-) TimerEvent: {}
+[1.818374] (-) TimerEvent: {}
+[1.918894] (-) TimerEvent: {}
+[2.019746] (-) TimerEvent: {}
+[2.120917] (-) TimerEvent: {}
+[2.221459] (-) TimerEvent: {}
+[2.322969] (-) TimerEvent: {}
+[2.423539] (-) TimerEvent: {}
+[2.524043] (-) TimerEvent: {}
+[2.624528] (-) TimerEvent: {}
+[2.726099] (-) TimerEvent: {}
+[2.826506] (-) TimerEvent: {}
+[2.927140] (-) TimerEvent: {}
+[3.028651] (-) TimerEvent: {}
+[3.129113] (-) TimerEvent: {}
+[3.229788] (-) TimerEvent: {}
+[3.330319] (-) TimerEvent: {}
+[3.430859] (-) TimerEvent: {}
+[3.531373] (-) TimerEvent: {}
+[3.631815] (-) TimerEvent: {}
+[3.732443] (-) TimerEvent: {}
+[3.832969] (-) TimerEvent: {}
+[3.933532] (-) TimerEvent: {}
+[4.034100] (-) TimerEvent: {}
+[4.135573] (-) TimerEvent: {}
+[4.237104] (-) TimerEvent: {}
+[4.337639] (-) TimerEvent: {}
+[4.438164] (-) TimerEvent: {}
+[4.545650] (-) TimerEvent: {}
+[4.590501] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/master_for_demo.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint janus_rx(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.591022] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/master_for_demo.cpp:61:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KtimeOut_interval\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.591326] (sup_com) StderrLine: {'line': b'   61 | int janus_rx(\x1b[01;35m\x1b[Kint timeOut_interval\x1b[m\x1b[K){                          //Reception from JANUS and SDMSH\n'}
+[4.591695] (sup_com) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K~~~~^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.645805] (-) TimerEvent: {}
+[4.746259] (-) TimerEvent: {}
+[4.846741] (-) TimerEvent: {}
+[4.948461] (-) TimerEvent: {}
+[5.048996] (-) TimerEvent: {}
+[5.149561] (-) TimerEvent: {}
+[5.250383] (-) TimerEvent: {}
+[5.351629] (-) TimerEvent: {}
+[5.452333] (-) TimerEvent: {}
+[5.552927] (-) TimerEvent: {}
+[5.658235] (-) TimerEvent: {}
+[5.764700] (-) TimerEvent: {}
+[5.867779] (-) TimerEvent: {}
+[5.968522] (-) TimerEvent: {}
+[6.072042] (-) TimerEvent: {}
+[6.172497] (-) TimerEvent: {}
+[6.274019] (-) TimerEvent: {}
+[6.374464] (-) TimerEvent: {}
+[6.475117] (-) TimerEvent: {}
+[6.575675] (-) TimerEvent: {}
+[6.677120] (-) TimerEvent: {}
+[6.777686] (-) TimerEvent: {}
+[6.878333] (-) TimerEvent: {}
+[6.978988] (-) TimerEvent: {}
+[7.079633] (-) TimerEvent: {}
+[7.180915] (-) TimerEvent: {}
+[7.281472] (-) TimerEvent: {}
+[7.383269] (-) TimerEvent: {}
+[7.483906] (-) TimerEvent: {}
+[7.586848] (-) TimerEvent: {}
+[7.687587] (-) TimerEvent: {}
+[7.789046] (-) TimerEvent: {}
+[7.890552] (-) TimerEvent: {}
+[7.991147] (-) TimerEvent: {}
+[8.091556] (-) TimerEvent: {}
+[8.193078] (-) TimerEvent: {}
+[8.293568] (-) TimerEvent: {}
+[8.394069] (-) TimerEvent: {}
+[8.494621] (-) TimerEvent: {}
+[8.518340] (sup_com) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking CXX executable talker\x1b[0m\n'}
+[8.595171] (-) TimerEvent: {}
+[8.695862] (-) TimerEvent: {}
+[8.797203] (-) TimerEvent: {}
+[8.897678] (-) TimerEvent: {}
+[8.915705] (sup_com) StdoutLine: {'line': b'[ 87%] Built target talker\n'}
+[8.998222] (-) TimerEvent: {}
+[9.098833] (-) TimerEvent: {}
+[9.199329] (-) TimerEvent: {}
+[9.299845] (-) TimerEvent: {}
+[9.401357] (-) TimerEvent: {}
+[9.501898] (-) TimerEvent: {}
+[9.602431] (-) TimerEvent: {}
+[9.703011] (-) TimerEvent: {}
+[9.803413] (-) TimerEvent: {}
+[9.904984] (-) TimerEvent: {}
+[10.005562] (-) TimerEvent: {}
+[10.106286] (-) TimerEvent: {}
+[10.207393] (-) TimerEvent: {}
+[10.307926] (-) TimerEvent: {}
+[10.408211] (-) TimerEvent: {}
+[10.508989] (-) TimerEvent: {}
+[10.609484] (-) TimerEvent: {}
+[10.710043] (-) TimerEvent: {}
+[10.810570] (-) TimerEvent: {}
+[10.911078] (-) TimerEvent: {}
+[11.011985] (-) TimerEvent: {}
+[11.113180] (-) TimerEvent: {}
+[11.213754] (-) TimerEvent: {}
+[11.314293] (-) TimerEvent: {}
+[11.414768] (-) TimerEvent: {}
+[11.515070] (-) TimerEvent: {}
+[11.615823] (-) TimerEvent: {}
+[11.716944] (-) TimerEvent: {}
+[11.817473] (-) TimerEvent: {}
+[11.918957] (-) TimerEvent: {}
+[12.019593] (-) TimerEvent: {}
+[12.120242] (-) TimerEvent: {}
+[12.220580] (-) TimerEvent: {}
+[12.321116] (-) TimerEvent: {}
+[12.421638] (-) TimerEvent: {}
+[12.522060] (-) TimerEvent: {}
+[12.622692] (-) TimerEvent: {}
+[12.723360] (-) TimerEvent: {}
+[12.826019] (-) TimerEvent: {}
+[12.926823] (-) TimerEvent: {}
+[13.028353] (-) TimerEvent: {}
+[13.129789] (-) TimerEvent: {}
+[13.230379] (-) TimerEvent: {}
+[13.330971] (-) TimerEvent: {}
+[13.431891] (-) TimerEvent: {}
+[13.532868] (-) TimerEvent: {}
+[13.633413] (-) TimerEvent: {}
+[13.733934] (-) TimerEvent: {}
+[13.834439] (-) TimerEvent: {}
+[13.936107] (-) TimerEvent: {}
+[14.037558] (-) TimerEvent: {}
+[14.138079] (-) TimerEvent: {}
+[14.238556] (-) TimerEvent: {}
+[14.340210] (-) TimerEvent: {}
+[14.441684] (-) TimerEvent: {}
+[14.542176] (-) TimerEvent: {}
+[14.642750] (-) TimerEvent: {}
+[14.744277] (-) TimerEvent: {}
+[14.845761] (-) TimerEvent: {}
+[14.946277] (-) TimerEvent: {}
+[15.047431] (-) TimerEvent: {}
+[15.147927] (-) TimerEvent: {}
+[15.191704] (sup_com) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable listener\x1b[0m\n'}
+[15.248115] (-) TimerEvent: {}
+[15.348940] (-) TimerEvent: {}
+[15.449408] (-) TimerEvent: {}
+[15.549978] (-) TimerEvent: {}
+[15.650419] (-) TimerEvent: {}
+[15.751035] (-) TimerEvent: {}
+[15.826379] (sup_com) StdoutLine: {'line': b'[100%] Built target listener\n'}
+[15.857057] (-) TimerEvent: {}
+[15.881403] (sup_com) CommandEnded: {'returncode': 0}
+[15.954657] (sup_com) JobProgress: {'identifier': 'sup_com', 'progress': 'install'}
+[15.957525] (-) TimerEvent: {}
+[15.991787] (sup_com) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/wilhem/NTNU_ROV_COM/sup_com/src/build/sup_com'], 'cwd': '/home/wilhem/NTNU_ROV_COM/sup_com/src/build/sup_com', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wilhem'), ('LC_TIME', 'nb_NO.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/wilhem'), ('OLDPWD', '/home/wilhem/NTNU_ROV_COM/sup_com'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'nb_NO.UTF-8'), ('SYSTEMD_EXEC_PID', '5852'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/wilhem/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'wilhem'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wilhem'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/wilhem-VirtualBox:@/tmp/.ICE-unix/1089,unix/wilhem-VirtualBox:/tmp/.ICE-unix/1089'), ('LAND', 'en_US.UTF-8'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nb_NO.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2a9a4d66_c7f4_4716_85f9_bb1d6d0bb77d'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'nb_NO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.Z9DE31'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.154'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/wilhem/ros2_ws/install/my_pkg_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nb_NO.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'nb_NO.UTF-8'), ('LC_IDENTIFICATION', 'nb_NO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/wilhem/NTNU_ROV_COM/sup_com/src/build/sup_com'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/wilhem/ros2_ws/install/my_pkg_test/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'nb_NO.UTF-8'), ('LC_PAPER', 'nb_NO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/wilhem/ros2_ws/install/my_pkg_test:/opt/ros/humble')]), 'shell': False}
+[16.006360] (sup_com) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[16.011428] (sup_com) StdoutLine: {'line': b'-- Installing: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/lib/sup_com/talker\n'}
+[16.021358] (sup_com) StdoutLine: {'line': b'-- Set runtime path of "/home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/lib/sup_com/talker" to ""\n'}
+[16.021719] (sup_com) StdoutLine: {'line': b'-- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/lib/sup_com/talker\n'}
+[16.024519] (sup_com) StdoutLine: {'line': b'-- Installing: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/lib/sup_com/listener\n'}
+[16.031055] (sup_com) StdoutLine: {'line': b'-- Set runtime path of "/home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/lib/sup_com/listener" to ""\n'}
+[16.031399] (sup_com) StdoutLine: {'line': b'-- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/lib/sup_com/talker\n'}
+[16.032057] (sup_com) StdoutLine: {'line': b'-- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/lib/sup_com/listener\n'}
+[16.034020] (sup_com) StdoutLine: {'line': b'-- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/lib/sup_com/nodeTalker\n'}
+[16.034574] (sup_com) StdoutLine: {'line': b'-- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/lib/sup_com/talker\n'}
+[16.035111] (sup_com) StdoutLine: {'line': b'-- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/lib/sup_com/listener\n'}
+[16.035668] (sup_com) StdoutLine: {'line': b'-- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/lib/sup_com/nodeTalker\n'}
+[16.037453] (sup_com) StdoutLine: {'line': b'-- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/lib/sup_com/masterListener\n'}
+[16.037750] (sup_com) StdoutLine: {'line': b'-- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/share/ament_index/resource_index/package_run_dependencies/sup_com\n'}
+[16.038314] (sup_com) StdoutLine: {'line': b'-- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/share/ament_index/resource_index/parent_prefix_path/sup_com\n'}
+[16.038570] (sup_com) StdoutLine: {'line': b'-- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/share/sup_com/environment/ament_prefix_path.sh\n'}
+[16.038742] (sup_com) StdoutLine: {'line': b'-- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/share/sup_com/environment/ament_prefix_path.dsv\n'}
+[16.039113] (sup_com) StdoutLine: {'line': b'-- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/share/sup_com/environment/path.sh\n'}
+[16.039388] (sup_com) StdoutLine: {'line': b'-- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/share/sup_com/environment/path.dsv\n'}
+[16.039577] (sup_com) StdoutLine: {'line': b'-- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/share/sup_com/local_setup.bash\n'}
+[16.040399] (sup_com) StdoutLine: {'line': b'-- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/share/sup_com/local_setup.sh\n'}
+[16.040697] (sup_com) StdoutLine: {'line': b'-- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/share/sup_com/local_setup.zsh\n'}
+[16.040819] (sup_com) StdoutLine: {'line': b'-- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/share/sup_com/local_setup.dsv\n'}
+[16.040941] (sup_com) StdoutLine: {'line': b'-- Installing: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/share/sup_com/package.dsv\n'}
+[16.041075] (sup_com) StdoutLine: {'line': b'-- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/share/ament_index/resource_index/packages/sup_com\n'}
+[16.041202] (sup_com) StdoutLine: {'line': b'-- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/share/sup_com/cmake/sup_comConfig.cmake\n'}
+[16.041312] (sup_com) StdoutLine: {'line': b'-- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/share/sup_com/cmake/sup_comConfig-version.cmake\n'}
+[16.041423] (sup_com) StdoutLine: {'line': b'-- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/share/sup_com/package.xml\n'}
+[16.045059] (sup_com) CommandEnded: {'returncode': 0}
+[16.062933] (-) TimerEvent: {}
+[16.176402] (-) TimerEvent: {}
+[16.189833] (sup_com) JobEnded: {'identifier': 'sup_com', 'rc': 0}
+[16.193094] (-) EventReactorShutdown: {}

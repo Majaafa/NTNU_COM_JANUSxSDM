@@ -1,0 +1,216 @@
+[0.000000] (-) TimerEvent: {}
+[0.000515] (sup_com) JobQueued: {'identifier': 'sup_com', 'dependencies': OrderedDict()}
+[0.000837] (sup_com) JobStarted: {'identifier': 'sup_com'}
+[0.018069] (sup_com) JobProgress: {'identifier': 'sup_com', 'progress': 'cmake'}
+[0.019064] (sup_com) JobProgress: {'identifier': 'sup_com', 'progress': 'build'}
+[0.022221] (sup_com) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/wilhem/NTNU_ROV_COM/sup_com/src/build/sup_com', '--', '-j4', '-l4'], 'cwd': '/home/wilhem/NTNU_ROV_COM/sup_com/src/build/sup_com', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wilhem'), ('LC_TIME', 'nb_NO.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/wilhem'), ('OLDPWD', '/home/wilhem/NTNU_ROV_COM/sup_com'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'nb_NO.UTF-8'), ('SYSTEMD_EXEC_PID', '1425'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/wilhem/NTNU_ROV_COM/sup_com/src/install:/home/wilhem/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'wilhem'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wilhem'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/wilhem-VirtualBox:@/tmp/.ICE-unix/1107,unix/wilhem-VirtualBox:/tmp/.ICE-unix/1107'), ('LAND', 'en_US.UTF-8'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nb_NO.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/81fcd7b6_1833_4b79_81dd_a8d03a008824'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'nb_NO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.6E1E21'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.138'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com:/home/wilhem/ros2_ws/install/my_pkg_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nb_NO.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'nb_NO.UTF-8'), ('LC_IDENTIFICATION', 'nb_NO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/wilhem/NTNU_ROV_COM/sup_com/src/build/sup_com'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/wilhem/ros2_ws/install/my_pkg_test/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'nb_NO.UTF-8'), ('LC_PAPER', 'nb_NO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com:/home/wilhem/ros2_ws/install/my_pkg_test:/opt/ros/humble')]), 'shell': False}
+[0.079841] (sup_com) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target listener\x1b[0m\n'}
+[0.080075] (sup_com) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target talker\x1b[0m\n'}
+[0.097203] (-) TimerEvent: {}
+[0.104456] (sup_com) StdoutLine: {'line': b'[ 37%] Built target nodeTalker\n'}
+[0.104683] (sup_com) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/talker.dir/src/master_for_demo.cpp.o\x1b[0m\n'}
+[0.105586] (sup_com) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/listener.dir/src/slave_for_demo.cpp.o\x1b[0m\n'}
+[0.114117] (sup_com) StdoutLine: {'line': b'[ 75%] Built target masterListener\n'}
+[0.199018] (-) TimerEvent: {}
+[0.299532] (-) TimerEvent: {}
+[0.401028] (-) TimerEvent: {}
+[0.502367] (-) TimerEvent: {}
+[0.602889] (-) TimerEvent: {}
+[0.705983] (-) TimerEvent: {}
+[0.806482] (-) TimerEvent: {}
+[0.906992] (-) TimerEvent: {}
+[1.009270] (-) TimerEvent: {}
+[1.103593] (sup_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/master_for_demo.cpp:13\x1b[m\x1b[K:\n'}
+[1.103884] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid janusxsdm::connection::sendSimple(std::string)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.104011] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:211:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kconflicting declaration \xe2\x80\x98\x1b[01m\x1b[Kauto end\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.104123] (sup_com) StderrLine: {'line': b'  211 |             auto \x1b[01;31m\x1b[Kend\x1b[m\x1b[K = std::chrono::system_clock::now();\n'}
+[1.104266] (sup_com) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.104376] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:190:18:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration as \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > > end\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.104521] (sup_com) StderrLine: {'line': b'  190 |             auto \x1b[01;36m\x1b[Kend\x1b[m\x1b[K = std::chrono::system_clock::now();\n'}
+[1.104662] (sup_com) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.104918] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:212:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredeclaration of \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::duration<double> elapsed_seconds\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.105082] (sup_com) StderrLine: {'line': b'  212 |             std::chrono::duration<double> \x1b[01;31m\x1b[Kelapsed_seconds\x1b[m\x1b[K = end-start;\n'}
+[1.105248] (sup_com) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.105368] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:191:43:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::duration<double> elapsed_seconds\x1b[m\x1b[K\xe2\x80\x99 previously declared here\n'}
+[1.105584] (sup_com) StderrLine: {'line': b'  191 |             std::chrono::duration<double> \x1b[01;36m\x1b[Kelapsed_seconds\x1b[m\x1b[K = end-start;\n'}
+[1.105722] (sup_com) StderrLine: {'line': b'      |                                           \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.105845] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:213:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredeclaration of \xe2\x80\x98\x1b[01m\x1b[Ktime_t end_time\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.105980] (sup_com) StderrLine: {'line': b'  213 |             std::time_t \x1b[01;31m\x1b[Kend_time\x1b[m\x1b[K = std::chrono::system_clock::to_time_t(end);\n'}
+[1.106140] (sup_com) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.106255] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:192:25:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktime_t end_time\x1b[m\x1b[K\xe2\x80\x99 previously declared here\n'}
+[1.106830] (sup_com) StderrLine: {'line': b'  192 |             std::time_t \x1b[01;36m\x1b[Kend_time\x1b[m\x1b[K = std::chrono::system_clock::to_time_t(end);\n'}
+[1.106974] (sup_com) StderrLine: {'line': b'      |                         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.107122] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:248:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kconflicting declaration \xe2\x80\x98\x1b[01m\x1b[Kauto end\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.107284] (sup_com) StderrLine: {'line': b'  248 |                 auto \x1b[01;31m\x1b[Kend\x1b[m\x1b[K = std::chrono::system_clock::now();\n'}
+[1.107449] (sup_com) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.107607] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:233:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration as \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > > end\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.107771] (sup_com) StderrLine: {'line': b'  233 |                 auto \x1b[01;36m\x1b[Kend\x1b[m\x1b[K = std::chrono::system_clock::now();\n'}
+[1.107905] (sup_com) StderrLine: {'line': b'      |                      \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.108015] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:249:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredeclaration of \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::duration<double> elapsed_seconds\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.108167] (sup_com) StderrLine: {'line': b'  249 |                 std::chrono::duration<double> \x1b[01;31m\x1b[Kelapsed_seconds\x1b[m\x1b[K = end-start;\n'}
+[1.108292] (sup_com) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.108502] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:234:47:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::duration<double> elapsed_seconds\x1b[m\x1b[K\xe2\x80\x99 previously declared here\n'}
+[1.108656] (sup_com) StderrLine: {'line': b'  234 |                 std::chrono::duration<double> \x1b[01;36m\x1b[Kelapsed_seconds\x1b[m\x1b[K = end-start;\n'}
+[1.108779] (sup_com) StderrLine: {'line': b'      |                                               \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.108899] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:250:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredeclaration of \xe2\x80\x98\x1b[01m\x1b[Ktime_t end_time\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.109041] (sup_com) StderrLine: {'line': b'  250 |                 std::time_t \x1b[01;31m\x1b[Kend_time\x1b[m\x1b[K = std::chrono::system_clock::to_time_t(end);\n'}
+[1.109160] (sup_com) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.109267] (-) TimerEvent: {}
+[1.109458] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:235:29:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktime_t end_time\x1b[m\x1b[K\xe2\x80\x99 previously declared here\n'}
+[1.109618] (sup_com) StderrLine: {'line': b'  235 |                 std::time_t \x1b[01;36m\x1b[Kend_time\x1b[m\x1b[K = std::chrono::system_clock::to_time_t(end);\n'}
+[1.109732] (sup_com) StderrLine: {'line': b'      |                             \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.112567] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:301:30:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kconst size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst long unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.112877] (sup_com) StderrLine: {'line': b'  301 |                         if(\x1b[01;35m\x1b[Kj != std::string::npos\x1b[m\x1b[K)\n'}
+[1.113038] (sup_com) StderrLine: {'line': b'      |                            \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.114098] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint janusxsdm::connection::decode(int16_t*, std::string&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.114387] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:340:36:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kbuf\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.114575] (sup_com) StderrLine: {'line': b'  340 |     int connection::decode(\x1b[01;35m\x1b[Kint16_t buf[]\x1b[m\x1b[K, std::string &message)\n'}
+[1.114707] (sup_com) StderrLine: {'line': b'      |                            \x1b[01;35m\x1b[K~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[1.114824] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:340:56:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmessage\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.114961] (sup_com) StderrLine: {'line': b'  340 | nt connection::decode(int16_t buf[], \x1b[01;35m\x1b[Kstd::string &message\x1b[m\x1b[K)\n'}
+[1.115099] (sup_com) StderrLine: {'line': b'      |                                      \x1b[01;35m\x1b[K~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[1.115252] (sup_com) StderrLine: {'line': b'\n'}
+[1.115723] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint janusxsdm::connection::listenSimple(std::string&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.115877] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:438:23:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ksdm_arg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.116008] (sup_com) StderrLine: {'line': b'  438 |                 char* \x1b[01;35m\x1b[Ksdm_arg\x1b[m\x1b[K[] = {arg1, arg2, (char*)scmd.c_str(), NULL};\n'}
+[1.116154] (sup_com) StderrLine: {'line': b'      |                       \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.117743] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:482:30:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kconst size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst long unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.117932] (sup_com) StderrLine: {'line': b'  482 |                         if(\x1b[01;35m\x1b[Kj != std::string::npos\x1b[m\x1b[K)\n'}
+[1.118100] (sup_com) StderrLine: {'line': b'      |                            \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.132800] (sup_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/slave_for_demo.cpp:13\x1b[m\x1b[K:\n'}
+[1.133058] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid janusxsdm::connection::sendSimple(std::string)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.133189] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:211:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kconflicting declaration \xe2\x80\x98\x1b[01m\x1b[Kauto end\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.133309] (sup_com) StderrLine: {'line': b'  211 |             auto \x1b[01;31m\x1b[Kend\x1b[m\x1b[K = std::chrono::system_clock::now();\n'}
+[1.133454] (sup_com) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.133563] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:190:18:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration as \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > > end\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.133671] (sup_com) StderrLine: {'line': b'  190 |             auto \x1b[01;36m\x1b[Kend\x1b[m\x1b[K = std::chrono::system_clock::now();\n'}
+[1.133849] (sup_com) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.133987] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:212:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredeclaration of \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::duration<double> elapsed_seconds\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.134114] (sup_com) StderrLine: {'line': b'  212 |             std::chrono::duration<double> \x1b[01;31m\x1b[Kelapsed_seconds\x1b[m\x1b[K = end-start;\n'}
+[1.134263] (sup_com) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.134483] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:191:43:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::duration<double> elapsed_seconds\x1b[m\x1b[K\xe2\x80\x99 previously declared here\n'}
+[1.134614] (sup_com) StderrLine: {'line': b'  191 |             std::chrono::duration<double> \x1b[01;36m\x1b[Kelapsed_seconds\x1b[m\x1b[K = end-start;\n'}
+[1.134796] (sup_com) StderrLine: {'line': b'      |                                           \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.134937] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:213:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredeclaration of \xe2\x80\x98\x1b[01m\x1b[Ktime_t end_time\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.135129] (sup_com) StderrLine: {'line': b'  213 |             std::time_t \x1b[01;31m\x1b[Kend_time\x1b[m\x1b[K = std::chrono::system_clock::to_time_t(end);\n'}
+[1.135247] (sup_com) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.135397] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:192:25:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktime_t end_time\x1b[m\x1b[K\xe2\x80\x99 previously declared here\n'}
+[1.135506] (sup_com) StderrLine: {'line': b'  192 |             std::time_t \x1b[01;36m\x1b[Kend_time\x1b[m\x1b[K = std::chrono::system_clock::to_time_t(end);\n'}
+[1.135610] (sup_com) StderrLine: {'line': b'      |                         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.136321] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:248:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kconflicting declaration \xe2\x80\x98\x1b[01m\x1b[Kauto end\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.136442] (sup_com) StderrLine: {'line': b'  248 |                 auto \x1b[01;31m\x1b[Kend\x1b[m\x1b[K = std::chrono::system_clock::now();\n'}
+[1.136550] (sup_com) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.136708] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:233:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration as \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > > end\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.136832] (sup_com) StderrLine: {'line': b'  233 |                 auto \x1b[01;36m\x1b[Kend\x1b[m\x1b[K = std::chrono::system_clock::now();\n'}
+[1.136963] (sup_com) StderrLine: {'line': b'      |                      \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.137080] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:249:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredeclaration of \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::duration<double> elapsed_seconds\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.137240] (sup_com) StderrLine: {'line': b'  249 |                 std::chrono::duration<double> \x1b[01;31m\x1b[Kelapsed_seconds\x1b[m\x1b[K = end-start;\n'}
+[1.137361] (sup_com) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.137480] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:234:47:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::duration<double> elapsed_seconds\x1b[m\x1b[K\xe2\x80\x99 previously declared here\n'}
+[1.137646] (sup_com) StderrLine: {'line': b'  234 |                 std::chrono::duration<double> \x1b[01;36m\x1b[Kelapsed_seconds\x1b[m\x1b[K = end-start;\n'}
+[1.137782] (sup_com) StderrLine: {'line': b'      |                                               \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.137907] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:250:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredeclaration of \xe2\x80\x98\x1b[01m\x1b[Ktime_t end_time\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.138029] (sup_com) StderrLine: {'line': b'  250 |                 std::time_t \x1b[01;31m\x1b[Kend_time\x1b[m\x1b[K = std::chrono::system_clock::to_time_t(end);\n'}
+[1.138165] (sup_com) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.138279] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:235:29:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktime_t end_time\x1b[m\x1b[K\xe2\x80\x99 previously declared here\n'}
+[1.138469] (sup_com) StderrLine: {'line': b'  235 |                 std::time_t \x1b[01;36m\x1b[Kend_time\x1b[m\x1b[K = std::chrono::system_clock::to_time_t(end);\n'}
+[1.138631] (sup_com) StderrLine: {'line': b'      |                             \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.140493] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:301:30:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kconst size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst long unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.140719] (sup_com) StderrLine: {'line': b'  301 |                         if(\x1b[01;35m\x1b[Kj != std::string::npos\x1b[m\x1b[K)\n'}
+[1.140831] (sup_com) StderrLine: {'line': b'      |                            \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.141863] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint janusxsdm::connection::decode(int16_t*, std::string&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.142038] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:340:36:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kbuf\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.142157] (sup_com) StderrLine: {'line': b'  340 |     int connection::decode(\x1b[01;35m\x1b[Kint16_t buf[]\x1b[m\x1b[K, std::string &message)\n'}
+[1.142264] (sup_com) StderrLine: {'line': b'      |                            \x1b[01;35m\x1b[K~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[1.142450] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:340:56:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmessage\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.142594] (sup_com) StderrLine: {'line': b'  340 |     int connection::decode(int16_t buf[], \x1b[01;35m\x1b[Kstd::string &message\x1b[m\x1b[K)\n'}
+[1.142701] (sup_com) StderrLine: {'line': b'      |                                           \x1b[01;35m\x1b[K~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[1.143491] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint janusxsdm::connection::listenSimple(std::string&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.143657] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:438:23:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ksdm_arg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.143812] (sup_com) StderrLine: {'line': b'  438 |                 char* \x1b[01;35m\x1b[Ksdm_arg\x1b[m\x1b[K[] = {arg1, arg2, (char*)scmd.c_str(), NULL};\n'}
+[1.143947] (sup_com) StderrLine: {'line': b'      |                       \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.145345] (sup_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:482:30:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kconst size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst long unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.145565] (sup_com) StderrLine: {'line': b'  482 |                         if(\x1b[01;35m\x1b[Kj != std::string::npos\x1b[m\x1b[K)\n'}
+[1.145677] (sup_com) StderrLine: {'line': b'      |                            \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.209630] (-) TimerEvent: {}
+[1.310137] (-) TimerEvent: {}
+[1.412666] (-) TimerEvent: {}
+[1.514059] (-) TimerEvent: {}
+[1.614772] (-) TimerEvent: {}
+[1.715477] (-) TimerEvent: {}
+[1.818472] (-) TimerEvent: {}
+[1.919196] (-) TimerEvent: {}
+[2.019689] (-) TimerEvent: {}
+[2.122466] (-) TimerEvent: {}
+[2.222937] (-) TimerEvent: {}
+[2.323392] (-) TimerEvent: {}
+[2.423871] (-) TimerEvent: {}
+[2.524358] (-) TimerEvent: {}
+[2.625197] (-) TimerEvent: {}
+[2.725651] (-) TimerEvent: {}
+[2.826101] (-) TimerEvent: {}
+[2.927180] (-) TimerEvent: {}
+[3.027917] (-) TimerEvent: {}
+[3.128650] (-) TimerEvent: {}
+[3.229102] (-) TimerEvent: {}
+[3.329668] (-) TimerEvent: {}
+[3.430124] (-) TimerEvent: {}
+[3.530760] (-) TimerEvent: {}
+[3.634016] (-) TimerEvent: {}
+[3.734517] (-) TimerEvent: {}
+[3.835025] (-) TimerEvent: {}
+[3.935620] (-) TimerEvent: {}
+[4.036324] (-) TimerEvent: {}
+[4.136773] (-) TimerEvent: {}
+[4.237315] (-) TimerEvent: {}
+[4.337831] (-) TimerEvent: {}
+[4.438249] (-) TimerEvent: {}
+[4.538781] (-) TimerEvent: {}
+[4.639300] (-) TimerEvent: {}
+[4.739707] (-) TimerEvent: {}
+[4.840332] (-) TimerEvent: {}
+[4.940935] (-) TimerEvent: {}
+[5.041467] (-) TimerEvent: {}
+[5.141992] (-) TimerEvent: {}
+[5.242700] (-) TimerEvent: {}
+[5.343144] (-) TimerEvent: {}
+[5.408424] (sup_com) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/talker.dir/build.make:76: CMakeFiles/talker.dir/src/master_for_demo.cpp.o] Error 1\n'}
+[5.408723] (sup_com) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/talker.dir/all] Error 2\n'}
+[5.408837] (sup_com) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[5.443389] (-) TimerEvent: {}
+[5.543884] (-) TimerEvent: {}
+[5.644456] (-) TimerEvent: {}
+[5.744867] (-) TimerEvent: {}
+[5.845526] (-) TimerEvent: {}
+[5.945959] (-) TimerEvent: {}
+[6.046646] (-) TimerEvent: {}
+[6.148085] (-) TimerEvent: {}
+[6.248613] (-) TimerEvent: {}
+[6.349164] (-) TimerEvent: {}
+[6.450693] (-) TimerEvent: {}
+[6.552154] (-) TimerEvent: {}
+[6.652693] (-) TimerEvent: {}
+[6.753234] (-) TimerEvent: {}
+[6.853760] (-) TimerEvent: {}
+[6.954292] (-) TimerEvent: {}
+[7.054870] (-) TimerEvent: {}
+[7.155372] (-) TimerEvent: {}
+[7.255919] (-) TimerEvent: {}
+[7.356427] (-) TimerEvent: {}
+[7.456957] (-) TimerEvent: {}
+[7.557459] (-) TimerEvent: {}
+[7.658345] (-) TimerEvent: {}
+[7.759511] (-) TimerEvent: {}
+[7.861027] (-) TimerEvent: {}
+[7.961509] (-) TimerEvent: {}
+[8.062064] (-) TimerEvent: {}
+[8.162633] (-) TimerEvent: {}
+[8.263086] (-) TimerEvent: {}
+[8.364632] (-) TimerEvent: {}
+[8.420089] (sup_com) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/listener.dir/build.make:76: CMakeFiles/listener.dir/src/slave_for_demo.cpp.o] Error 1\n'}
+[8.420415] (sup_com) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/listener.dir/all] Error 2\n'}
+[8.422527] (sup_com) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[8.423406] (sup_com) CommandEnded: {'returncode': 2}
+[8.465266] (-) TimerEvent: {}
+[8.489978] (sup_com) JobEnded: {'identifier': 'sup_com', 'rc': 2}
+[8.501167] (-) EventReactorShutdown: {}

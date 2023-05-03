@@ -1,0 +1,38 @@
+[0.033s] Invoking command in '/home/wilhem/NTNU_ROV_COM/sup_com/src/build/sup_com': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wilhem/ros2_ws/install/my_pkg_test:/opt/ros/humble /usr/bin/cmake --build /home/wilhem/NTNU_ROV_COM/sup_com/src/build/sup_com -- -j4 -l4
+[0.100s] [35m[1mConsolidate compiler generated dependencies of target nodeTalker[0m
+[0.131s] [ 12%] [32mBuilding CXX object CMakeFiles/nodeTalker.dir/src/publish_to_slave.cpp.o[0m
+[0.133s] [ 37%] Built target masterListener
+[0.134s] [ 62%] Built target talker
+[0.139s] [ 87%] Built target listener
+[6.897s] [100%] [32m[1mLinking CXX executable nodeTalker[0m
+[7.215s] [100%] Built target nodeTalker
+[7.234s] Invoked command in '/home/wilhem/NTNU_ROV_COM/sup_com/src/build/sup_com' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wilhem/ros2_ws/install/my_pkg_test:/opt/ros/humble /usr/bin/cmake --build /home/wilhem/NTNU_ROV_COM/sup_com/src/build/sup_com -- -j4 -l4
+[7.298s] Invoking command in '/home/wilhem/NTNU_ROV_COM/sup_com/src/build/sup_com': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wilhem/ros2_ws/install/my_pkg_test:/opt/ros/humble /usr/bin/cmake --install /home/wilhem/NTNU_ROV_COM/sup_com/src/build/sup_com
+[7.309s] -- Install configuration: ""
+[7.310s] -- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/lib/sup_com/talker
+[7.311s] -- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/lib/sup_com/talker
+[7.312s] -- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/lib/sup_com/listener
+[7.313s] -- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/lib/sup_com/talker
+[7.314s] -- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/lib/sup_com/listener
+[7.315s] -- Installing: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/lib/sup_com/nodeTalker
+[7.317s] -- Set runtime path of "/home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/lib/sup_com/nodeTalker" to ""
+[7.318s] -- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/lib/sup_com/talker
+[7.319s] -- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/lib/sup_com/listener
+[7.320s] -- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/lib/sup_com/nodeTalker
+[7.321s] -- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/lib/sup_com/masterListener
+[7.321s] -- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/share/ament_index/resource_index/package_run_dependencies/sup_com
+[7.321s] -- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/share/ament_index/resource_index/parent_prefix_path/sup_com
+[7.322s] -- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/share/sup_com/environment/ament_prefix_path.sh
+[7.322s] -- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/share/sup_com/environment/ament_prefix_path.dsv
+[7.322s] -- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/share/sup_com/environment/path.sh
+[7.323s] -- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/share/sup_com/environment/path.dsv
+[7.323s] -- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/share/sup_com/local_setup.bash
+[7.323s] -- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/share/sup_com/local_setup.sh
+[7.323s] -- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/share/sup_com/local_setup.zsh
+[7.324s] -- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/share/sup_com/local_setup.dsv
+[7.324s] -- Installing: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/share/sup_com/package.dsv
+[7.325s] -- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/share/ament_index/resource_index/packages/sup_com
+[7.325s] -- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/share/sup_com/cmake/sup_comConfig.cmake
+[7.325s] -- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/share/sup_com/cmake/sup_comConfig-version.cmake
+[7.326s] -- Up-to-date: /home/wilhem/NTNU_ROV_COM/sup_com/src/install/sup_com/share/sup_com/package.xml
+[7.331s] Invoked command in '/home/wilhem/NTNU_ROV_COM/sup_com/src/build/sup_com' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wilhem/ros2_ws/install/my_pkg_test:/opt/ros/humble /usr/bin/cmake --install /home/wilhem/NTNU_ROV_COM/sup_com/src/build/sup_com

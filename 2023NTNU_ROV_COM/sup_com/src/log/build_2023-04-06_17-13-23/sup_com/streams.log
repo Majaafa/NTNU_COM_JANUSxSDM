@@ -1,0 +1,20 @@
+[0.032s] Invoking command in '/home/wilhem/NTNU_ROV_COM/sup_com/src/build/sup_com': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wilhem/ros2_ws/install/my_pkg_test:/opt/ros/humble /usr/bin/cmake --build /home/wilhem/NTNU_ROV_COM/sup_com/src/build/sup_com -- -j4 -l4
+[0.141s] [ 12%] [32mBuilding CXX object CMakeFiles/talker.dir/src/master_for_demo.cpp.o[0m
+[0.151s] [ 37%] Built target nodeTalker
+[0.152s] [ 50%] [32mBuilding CXX object CMakeFiles/listener.dir/src/slave_for_demo.cpp.o[0m
+[0.178s] [ 75%] Built target masterListener
+[0.322s] [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/slave_for_demo.cpp:13:10:[m[K [01;31m[Kfatal error: [m[K../../../../lib/janusxsdm/janusxsdm.cpp: No such file or directory
+[0.324s]    13 | #include [01;31m[K"../../../../lib/janusxsdm/janusxsdm.cpp"[m[K
+[0.325s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.326s] compilation terminated.
+[0.327s] [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/master_for_demo.cpp:13:10:[m[K [01;31m[Kfatal error: [m[K../../../../lib/janusxsdm/janusxsdm.cpp: No such file or directory
+[0.328s]    13 | #include [01;31m[K"../../../../lib/janusxsdm/janusxsdm.cpp"[m[K
+[0.330s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.331s] compilation terminated.
+[0.332s] gmake[2]: *** [CMakeFiles/talker.dir/build.make:76: CMakeFiles/talker.dir/src/master_for_demo.cpp.o] Error 1
+[0.334s] gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/talker.dir/all] Error 2
+[0.334s] gmake[1]: *** Waiting for unfinished jobs....
+[0.335s] gmake[2]: *** [CMakeFiles/listener.dir/build.make:76: CMakeFiles/listener.dir/src/slave_for_demo.cpp.o] Error 1
+[0.335s] gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/listener.dir/all] Error 2
+[0.335s] gmake: *** [Makefile:146: all] Error 2
+[0.341s] Invoked command in '/home/wilhem/NTNU_ROV_COM/sup_com/src/build/sup_com' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wilhem/ros2_ws/install/my_pkg_test:/opt/ros/humble /usr/bin/cmake --build /home/wilhem/NTNU_ROV_COM/sup_com/src/build/sup_com -- -j4 -l4

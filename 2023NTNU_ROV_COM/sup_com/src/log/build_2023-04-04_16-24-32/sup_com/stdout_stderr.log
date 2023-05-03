@@ -1,0 +1,64 @@
+[35m[1mConsolidate compiler generated dependencies of target listener[0m
+[35m[1mConsolidate compiler generated dependencies of target talker[0m
+[ 25%] Built target masterListener
+[ 50%] Built target nodeTalker
+[ 62%] [32mBuilding CXX object CMakeFiles/talker.dir/src/master_for_demo.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/listener.dir/src/slave_for_demo.cpp.o[0m
+In file included from [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/master_for_demo.cpp:13[m[K:
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:[m[K In member function ‘[01m[Kvoid janusxsdm::connection::sendSimple(std::string)[m[K’:
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:255:65:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+  255 |                     MyFile1121 << "Buffer: " << buffer << "\n"; [01;35m[Ksizeof(buffer)[m[K;
+      |                                                                 [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:258:21:[m[K [01;31m[Kerror: [m[K‘[01m[KMyFile111[m[K’ was not declared in this scope; did you mean ‘[01m[KMyFile1121[m[K’?
+  258 |                     [01;31m[KMyFile111[m[K.close();
+      |                     [01;31m[K^~~~~~~~~[m[K
+      |                     [32m[KMyFile1121[m[K
+In file included from [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/slave_for_demo.cpp:13[m[K:
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:[m[K In member function ‘[01m[Kvoid janusxsdm::connection::sendSimple(std::string)[m[K’:
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:255:65:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+  255 |                     MyFile1121 << "Buffer: " << buffer << "\n"; [01;35m[Ksizeof(buffer)[m[K;
+      |                                                                 [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:258:21:[m[K [01;31m[Kerror: [m[K‘[01m[KMyFile111[m[K’ was not declared in this scope; did you mean ‘[01m[KMyFile1121[m[K’?
+  258 |                     [01;31m[KMyFile111[m[K.close();
+      |                     [01;31m[K^~~~~~~~~[m[K
+      |                     [32m[KMyFile1121[m[K
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:324:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kconst size_type[m[K’ {aka ‘[01m[Kconst long unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  324 |                         if([01;35m[Kj != std::string::npos[m[K)
+      |                            [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:[m[K In member function ‘[01m[Kint janusxsdm::connection::decode(int16_t*, std::string&)[m[K’:
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:380:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbuf[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  380 |     int connection::decode([01;35m[Kint16_t buf[][m[K, std::string &message)
+      |                            [01;35m[K~~~~~~~~^~~~~[m[K
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:380:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmessage[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  380 |     int connection::decode(int16_t buf[], [01;35m[Kstd::string &message[m[K)
+      |                                           [01;35m[K~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:[m[K In member function ‘[01m[Kint janusxsdm::connection::listenSimple(std::string&)[m[K’:
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:478:23:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksdm_arg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  478 |                 char* [01;35m[Ksdm_arg[m[K[] = {arg1, arg2, (char*)scmd.c_str(), NULL};
+      |                       [01;35m[K^~~~~~~[m[K
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:522:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kconst size_type[m[K’ {aka ‘[01m[Kconst long unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  522 |                         if([01;35m[Kj != std::string::npos[m[K)
+      |                            [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:324:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kconst size_type[m[K’ {aka ‘[01m[Kconst long unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  324 |                         if([01;35m[Kj != std::string::npos[m[K)
+      |                            [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:[m[K In member function ‘[01m[Kint janusxsdm::connection::decode(int16_t*, std::string&)[m[K’:
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:380:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbuf[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  380 |     int connection::decode([01;35m[Kint16_t buf[][m[K, std::string &message)
+      |                            [01;35m[K~~~~~~~~^~~~~[m[K
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:380:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmessage[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  380 |     int connection::decode(int16_t buf[], [01;35m[Kstd::string &message[m[K)
+      |                                           [01;35m[K~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:[m[K In member function ‘[01m[Kint janusxsdm::connection::listenSimple(std::string&)[m[K’:
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:478:23:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksdm_arg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  478 |                 char* [01;35m[Ksdm_arg[m[K[] = {arg1, arg2, (char*)scmd.c_str(), NULL};
+      |                       [01;35m[K^~~~~~~[m[K
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:522:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kconst size_type[m[K’ {aka ‘[01m[Kconst long unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  522 |                         if([01;35m[Kj != std::string::npos[m[K)
+      |                            [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/talker.dir/build.make:76: CMakeFiles/talker.dir/src/master_for_demo.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/talker.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/listener.dir/build.make:76: CMakeFiles/listener.dir/src/slave_for_demo.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/listener.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

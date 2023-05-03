@@ -1,0 +1,117 @@
+[0.027s] Invoking command in '/home/wilhem/NTNU_ROV_COM/sup_com/src/build/sup_com': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wilhem/ros2_ws/install/my_pkg_test:/opt/ros/humble /usr/bin/cmake --build /home/wilhem/NTNU_ROV_COM/sup_com/src/build/sup_com -- -j4 -l4
+[0.113s] [35m[1mConsolidate compiler generated dependencies of target listener[0m
+[0.113s] [35m[1mConsolidate compiler generated dependencies of target talker[0m
+[0.120s] [ 25%] Built target nodeTalker
+[0.121s] [ 37%] [32mBuilding CXX object CMakeFiles/listener.dir/src/slave_for_demo.cpp.o[0m
+[0.136s] [ 62%] Built target masterListener
+[0.137s] [ 75%] [32mBuilding CXX object CMakeFiles/talker.dir/src/master_for_demo.cpp.o[0m
+[1.144s] In file included from [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/slave_for_demo.cpp:13[m[K:
+[1.144s] [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:[m[K In member function ‘[01m[Kvoid janusxsdm::connection::sendSimple(std::string)[m[K’:
+[1.145s] [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:258:65:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[1.145s]   258 |                     MyFile1121 << "Buffer: " << buffer << "\n"; [01;35m[Ksizeof(buffer)[m[K;
+[1.145s]       |                                                                 [01;35m[K^~~~~~~~~~~~~~[m[K
+[1.152s] In file included from [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/master_for_demo.cpp:13[m[K:
+[1.153s] [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:[m[K In member function ‘[01m[Kvoid janusxsdm::connection::sendSimple(std::string)[m[K’:
+[1.153s] [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:258:65:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[1.153s]   258 |                 MyFile1121 << "Buffer: " << buffer << "\n"; [01;35m[Ksizeof(buffer)[m[K;
+[1.153s]       |                                                             [01;35m[K^~~~~~~~~~~~~~[m[K
+[1.154s] 
+[1.154s] [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:369:34:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kconst size_type[m[K’ {aka ‘[01m[Kconst long unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[1.154s]   369 |                             if([01;35m[Kj != std::string::npos[m[K)
+[1.154s]       |                                [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[1.154s] [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:247:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knbytes[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.155s]   247 |                 int [01;35m[Knbytes[m[K;
+[1.155s]       |                     [01;35m[K^~~~~~[m[K
+[1.156s] [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:[m[K In member function ‘[01m[Kint janusxsdm::connection::decode(int16_t*, std::string&)[m[K’:
+[1.156s] [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:426:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbuf[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.157s]   426 |     int connection::decode([01;35m[Kint16_t buf[][m[K, std::string &message)
+[1.157s]       |                            [01;35m[K~~~~~~~~^~~~~[m[K
+[1.157s] [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:426:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmessage[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.157s]   426 |     int connection::decode(int16_t buf[], [01;35m[Kstd::string &message[m[K)
+[1.158s]       |                                           [01;35m[K~~~~~~~~~~~~~^~~~~~~[m[K
+[1.158s] [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:[m[K In member function ‘[01m[Kint janusxsdm::connection::listenSimple(std::string&)[m[K’:
+[1.158s] [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:525:23:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksdm_arg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.158s]   525 |                 char* [01;35m[Ksdm_arg[m[K[] = {arg1, arg2, (char*)scmd.c_str(), NULL};
+[1.158s]       |                       [01;35m[K^~~~~~~[m[K
+[1.160s] [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:570:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kconst size_type[m[K’ {aka ‘[01m[Kconst long unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[1.160s]   570 |                         if([01;35m[Kj != std::string::npos[m[K)
+[1.160s]       |                            [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[1.162s] [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:369:34:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kconst size_type[m[K’ {aka ‘[01m[Kconst long unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[1.162s]   369 |                             if([01;35m[Kj != std::string::npos[m[K)
+[1.162s]       |                                [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[1.163s] [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:247:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knbytes[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.163s]   247 |                 int [01;35m[Knbytes[m[K;
+[1.163s]       |                     [01;35m[K^~~~~~[m[K
+[1.164s] [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:[m[K In member function ‘[01m[Kint janusxsdm::connection::listen(std::string&, std::chrono::duration<double>)[m[K’:
+[1.165s] [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:796:37:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[Kchar[m[K’ to non-scalar type ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} requested
+[1.165s]   796 |                     std::string s = [01;31m[Kch1[m[K;
+[1.165s]       |                                     [01;31m[K^~~[m[K
+[1.165s] [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:797:28:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} to ‘[01m[Kconst char*[m[K’
+[1.165s]   797 |                     printf([01;31m[Ks[m[K);
+[1.165s]       |                            [01;31m[K^[m[K
+[1.165s]       |                            [01;31m[K|[m[K
+[1.165s]       |                            [01;31m[Kstd::string {aka std::__cxx11::basic_string<char>}[m[K
+[1.166s] In file included from [01m[K/usr/include/c++/11/cstdio:42[m[K,
+[1.166s]                  from [01m[K/usr/include/c++/11/ext/string_conversions.h:43[m[K,
+[1.166s]                  from [01m[K/usr/include/c++/11/bits/basic_string.h:6608[m[K,
+[1.166s]                  from [01m[K/usr/include/c++/11/string:55[m[K,
+[1.166s]                  from [01m[K/usr/include/c++/11/bits/locale_classes.h:40[m[K,
+[1.166s]                  from [01m[K/usr/include/c++/11/bits/ios_base.h:41[m[K,
+[1.166s]                  from [01m[K/usr/include/c++/11/ios:42[m[K,
+[1.166s]                  from [01m[K/usr/include/c++/11/ostream:38[m[K,
+[1.167s]                  from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[1.167s]                  from [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/slave_for_demo.cpp:1[m[K:
+[1.167s] [01m[K/usr/include/stdio.h:356:43:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kint printf(const char*, ...)[m[K’
+[1.167s]   356 | extern int printf ([01;36m[Kconst char *__restrict __format[m[K, ...);
+[1.167s]       |                    [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[1.167s] [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:[m[K In member function ‘[01m[Kint janusxsdm::connection::decode(int16_t*, std::string&)[m[K’:
+[1.167s] [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:426:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbuf[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.167s]   426 |     int connection::decode([01;35m[Kint16_t buf[][m[K, std::string &message)
+[1.168s]       |                            [01;35m[K~~~~~~~~^~~~~[m[K
+[1.168s] [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:426:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmessage[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.168s]   426 |     int connection::decode(int16_t buf[], [01;35m[Kstd::string &message[m[K)
+[1.168s]       |                                           [01;35m[K~~~~~~~~~~~~~^~~~~~~[m[K
+[1.168s] [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:[m[K In member function ‘[01m[Kint janusxsdm::connection::listenSimple(std::string&)[m[K’:
+[1.168s] [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:525:23:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksdm_arg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.169s]   525 |                 char* [01;35m[Ksdm_arg[m[K[] = {arg1, arg2, (char*)scmd.c_str(), NULL};
+[1.169s]       |                       [01;35m[K^~~~~~~[m[K
+[1.169s] [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:570:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kconst size_type[m[K’ {aka ‘[01m[Kconst long unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[1.169s]   570 |                         if([01;35m[Kj != std::string::npos[m[K)
+[1.169s]       |                            [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[1.169s] In file included from [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/slave_for_demo.cpp:13[m[K:
+[1.169s] [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:770:18:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kch2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.169s]   770 |             char [01;35m[Kch2[m[K;                                           //Buffer for storing from pipe() "fd2"
+[1.170s]       |                  [01;35m[K^~~[m[K
+[1.173s] [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:[m[K In member function ‘[01m[Kint janusxsdm::connection::listen(std::string&, std::chrono::duration<double>)[m[K’:
+[1.173s] [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:796:37:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[Kchar[m[K’ to non-scalar type ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} requested
+[1.173s]   796 |                     std::string s = [01;31m[Kch1[m[K;
+[1.173s]       |                                     [01;31m[K^~~[m[K
+[1.173s] [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:797:28:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} to ‘[01m[Kconst char*[m[K’
+[1.174s]   797 |                     printf([01;31m[Ks[m[K);
+[1.174s]       |                            [01;31m[K^[m[K
+[1.174s]       |                            [01;31m[K|[m[K
+[1.174s]       |                            [01;31m[Kstd::string {aka std::__cxx11::basic_string<char>}[m[K
+[1.174s] In file included from [01m[K/usr/include/c++/11/cstdio:42[m[K,
+[1.174s]                  from [01m[K/usr/include/c++/11/ext/string_conversions.h:43[m[K,
+[1.174s]                  from [01m[K/usr/include/c++/11/bits/basic_string.h:6608[m[K,
+[1.175s]                  from [01m[K/usr/include/c++/11/string:55[m[K,
+[1.175s]                  from [01m[K/usr/include/c++/11/bits/locale_classes.h:40[m[K,
+[1.175s]                  from [01m[K/usr/include/c++/11/bits/ios_base.h:41[m[K,
+[1.175s]                  from [01m[K/usr/include/c++/11/ios:42[m[K,
+[1.175s]                  from [01m[K/usr/include/c++/11/ostream:38[m[K,
+[1.175s]                  from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[1.176s]                  from [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/master_for_demo.cpp:1[m[K:
+[1.176s] [01m[K/usr/include/stdio.h:356:43:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kint printf(const char*, ...)[m[K’
+[1.176s]   356 | extern int printf ([01;36m[Kconst char *__restrict __format[m[K, ...);
+[1.176s]       |                    [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[1.177s] In file included from [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/master_for_demo.cpp:13[m[K:
+[1.178s] [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:770:18:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kch2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.178s]   770 |             char [01;35m[Kch2[m[K;                                           //Buffer for storing from pipe() "fd2"
+[1.178s]       |                  [01;35m[K^~~[m[K
+[5.569s] gmake[2]: *** [CMakeFiles/talker.dir/build.make:76: CMakeFiles/talker.dir/src/master_for_demo.cpp.o] Error 1
+[5.569s] gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/talker.dir/all] Error 2
+[5.569s] gmake[1]: *** Waiting for unfinished jobs....
+[8.666s] gmake[2]: *** [CMakeFiles/listener.dir/build.make:76: CMakeFiles/listener.dir/src/slave_for_demo.cpp.o] Error 1
+[8.667s] gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/listener.dir/all] Error 2
+[8.667s] gmake: *** [Makefile:146: all] Error 2
+[8.670s] Invoked command in '/home/wilhem/NTNU_ROV_COM/sup_com/src/build/sup_com' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wilhem/ros2_ws/install/my_pkg_test:/opt/ros/humble /usr/bin/cmake --build /home/wilhem/NTNU_ROV_COM/sup_com/src/build/sup_com -- -j4 -l4

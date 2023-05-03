@@ -1,0 +1,283 @@
+//*************************************************************************
+// JANUS is a simple, robust, open standard signalling method for         *
+// underwater communications. See <http://www.januswiki.org> for details. *
+//*************************************************************************
+// Example software implementations provided by STO CMRE are subject to   *
+// Copyright (C) 2008-2018 STO Centre for Maritime Research and           *
+// Experimentation (CMRE)                                                 *
+//                                                                        *
+// This is free software: you can redistribute it and/or modify it        *
+// under the terms of the GNU General Public License version 3 as         *
+// published by the Free Software Foundation.                             *
+//                                                                        *
+// This program is distributed in the hope that it will be useful, but    *
+// WITHOUT ANY WARRANTY; without even the implied warranty of FITNESS     *
+// FOR A PARTICULAR PURPOSE. See the GNU General Public License for       *
+// more details.                                                          *
+//                                                                        *
+// You should have received a copy of the GNU General Public License      *
+// along with this program. If not, see <http://www.gnu.org/licenses/>.   *
+//*************************************************************************
+// Authors: Giovanni Zappa, Luigi Elia D'Amaro                            *
+//*************************************************************************
+
+//! Class User Identifier table
+static const char* class_user_id[] =
+{
+   "Emergency",                                     // 0
+   "Underwater GPS",                                // 1
+   "Underwater AIS",                                // 2
+   "Pinger (nav. & ranging)",                       // 3
+   "Fixed vertical mooring",                        // 4
+   "Rigid vertical structure",                      // 5
+   "Hazard marker",                                 // 6
+   "Channel marker",                                // 7
+   "Wind Generator",                                // 8
+   "Wave Generator",                                // 9
+   "Solar Generator",                               // 10
+   "OPEN",                                          // 11
+   "OPEN",                                          // 12
+   "OPEN",                                          // 13
+   "OPEN",                                          // 14
+   "Capabilities descriptor",                       // 15
+   "NATO JANUS reference Implementation",           // 16
+   "OPEN",                                          // 17
+   "OPEN",                                          // 18
+   "OPEN",                                          // 19
+   "OPEN",                                          // 20
+   "OPEN",                                          // 21
+   "OPEN",                                          // 22
+   "OPEN",                                          // 23
+   "OPEN",                                          // 24
+   "OPEN",                                          // 25
+   "OPEN",                                          // 26
+   "OPEN",                                          // 27
+   "OPEN",                                          // 28
+   "OPEN",                                          // 29
+   "OPEN",                                          // 30
+   "OPEN",                                          // 31
+   "OPEN",                                          // 32
+   "OPEN",                                          // 33
+   "OPEN",                                          // 34
+   "OPEN",                                          // 35
+   "OPEN",                                          // 36
+   "OPEN",                                          // 37
+   "OPEN",                                          // 38
+   "OPEN",                                          // 39
+   "OPEN",                                          // 40
+   "OPEN",                                          // 41
+   "OPEN",                                          // 42
+   "OPEN",                                          // 43
+   "OPEN",                                          // 44
+   "OPEN",                                          // 45
+   "OPEN",                                          // 46
+   "OPEN",                                          // 47
+   "OPEN",                                          // 48
+   "OPEN",                                          // 49
+   "OPEN",                                          // 50
+   "OPEN",                                          // 51
+   "OPEN",                                          // 52
+   "OPEN",                                          // 53
+   "OPEN",                                          // 54
+   "OPEN",                                          // 55
+   "OPEN",                                          // 56
+   "OPEN",                                          // 57
+   "OPEN",                                          // 58
+   "OPEN",                                          // 59
+   "OPEN",                                          // 60
+   "OPEN",                                          // 61
+   "OPEN",                                          // 62
+   "OPEN",                                          // 63
+   "OPEN",                                          // 64
+   "OPEN",                                          // 65
+   "OPEN",                                          // 66
+   "OPEN",                                          // 67
+   "OPEN",                                          // 68
+   "OPEN",                                          // 69
+   "OPEN",                                          // 70
+   "OPEN",                                          // 71
+   "OPEN",                                          // 72
+   "OPEN",                                          // 73
+   "OPEN",                                          // 74
+   "OPEN",                                          // 75
+   "OPEN",                                          // 76
+   "OPEN",                                          // 77
+   "OPEN",                                          // 78
+   "OPEN",                                          // 79
+   "OPEN",                                          // 80
+   "OPEN",                                          // 81
+   "OPEN",                                          // 82
+   "OPEN",                                          // 83
+   "OPEN",                                          // 84
+   "OPEN",                                          // 85
+   "OPEN",                                          // 86
+   "OPEN",                                          // 87
+   "OPEN",                                          // 88
+   "OPEN",                                          // 89
+   "OPEN",                                          // 90
+   "OPEN",                                          // 91
+   "OPEN",                                          // 92
+   "OPEN",                                          // 93
+   "OPEN",                                          // 94
+   "OPEN",                                          // 95
+   "OPEN",                                          // 96
+   "OPEN",                                          // 97
+   "OPEN",                                          // 98
+   "OPEN",                                          // 99
+   "OPEN",                                          // 100
+   "OPEN",                                          // 101
+   "OPEN",                                          // 102
+   "OPEN",                                          // 103
+   "OPEN",                                          // 104
+   "OPEN",                                          // 105
+   "OPEN",                                          // 106
+   "OPEN",                                          // 107
+   "OPEN",                                          // 108
+   "OPEN",                                          // 109
+   "OPEN",                                          // 110
+   "OPEN",                                          // 111
+   "OPEN",                                          // 112
+   "OPEN",                                          // 113
+   "OPEN",                                          // 114
+   "OPEN",                                          // 115
+   "OPEN",                                          // 116
+   "OPEN",                                          // 117
+   "OPEN",                                          // 118
+   "OPEN",                                          // 119
+   "OPEN",                                          // 120
+   "OPEN",                                          // 121
+   "OPEN",                                          // 122
+   "OPEN",                                          // 123
+   "OPEN",                                          // 124
+   "OPEN",                                          // 125
+   "OPEN",                                          // 126
+   "OPEN",                                          // 127
+   "OPEN",                                          // 128
+   "OPEN",                                          // 129
+   "OPEN",                                          // 130
+   "OPEN",                                          // 131
+   "OPEN",                                          // 132
+   "OPEN",                                          // 133
+   "OPEN",                                          // 134
+   "OPEN",                                          // 135
+   "OPEN",                                          // 136
+   "OPEN",                                          // 137
+   "OPEN",                                          // 138
+   "OPEN",                                          // 139
+   "OPEN",                                          // 140
+   "OPEN",                                          // 141
+   "OPEN",                                          // 142
+   "OPEN",                                          // 143
+   "OPEN",                                          // 144
+   "OPEN",                                          // 145
+   "OPEN",                                          // 146
+   "OPEN",                                          // 147
+   "OPEN",                                          // 148
+   "OPEN",                                          // 149
+   "OPEN",                                          // 150
+   "OPEN",                                          // 151
+   "OPEN",                                          // 152
+   "OPEN",                                          // 153
+   "OPEN",                                          // 154
+   "OPEN",                                          // 155
+   "OPEN",                                          // 156
+   "OPEN",                                          // 157
+   "OPEN",                                          // 158
+   "OPEN",                                          // 159
+   "OPEN",                                          // 160
+   "OPEN",                                          // 161
+   "OPEN",                                          // 162
+   "OPEN",                                          // 163
+   "OPEN",                                          // 164
+   "OPEN",                                          // 165
+   "OPEN",                                          // 166
+   "OPEN",                                          // 167
+   "OPEN",                                          // 168
+   "OPEN",                                          // 169
+   "OPEN",                                          // 170
+   "OPEN",                                          // 171
+   "OPEN",                                          // 172
+   "OPEN",                                          // 173
+   "OPEN",                                          // 174
+   "OPEN",                                          // 175
+   "OPEN",                                          // 176
+   "OPEN",                                          // 177
+   "OPEN",                                          // 178
+   "OPEN",                                          // 179
+   "OPEN",                                          // 180
+   "OPEN",                                          // 181
+   "OPEN",                                          // 182
+   "OPEN",                                          // 183
+   "OPEN",                                          // 184
+   "OPEN",                                          // 185
+   "OPEN",                                          // 186
+   "Mongolia",                                      // 187
+   "New Zealand",                                   // 188
+   "Republic of Korea",                             // 189
+   "Pakistan",                                      // 190
+   "Japan",                                         // 191
+   "Iraq",                                          // 192
+   "Australia",                                     // 193
+   "Afghanistan",                                   // 194
+   "United Arab Emirates",                          // 195
+   "Kuwait",                                        // 196
+   "Qatar",                                         // 197
+   "Bahrain",                                       // 198
+   "Tunisia",                                       // 199
+   "Morocco",                                       // 200
+   "Mauritania",                                    // 201
+   "Jordan",                                        // 202
+   "Israel",                                        // 203
+   "Egypt",                                         // 204
+   "Algeria",                                       // 205
+   "Uzbekistan",                                    // 206
+   "Ukraine",                                       // 207
+   "Turkmenistan",                                  // 208
+   "the former Yugoslav Republic of Macedonia",     // 209
+   "Tajikistan",                                    // 210
+   "Switzerland",                                   // 211
+   "Sweden",                                        // 212
+   "Serbia",                                        // 213
+   "Montenegro",                                    // 214
+   "The Republic of Moldova",                       // 215
+   "Malta",                                         // 216
+   "Kyrgyz Republic",                               // 217
+   "Kazakhstan",                                    // 218
+   "Ireland",                                       // 219
+   "Georgia",                                       // 220
+   "Finland",                                       // 221
+   "Bosnia and Herzegovina",                        // 222
+   "Belarus",                                       // 223
+   "Azerbaijan",                                    // 224
+   "Austria",                                       // 225
+   "Armenia",                                       // 226
+   "United States",                                 // 227
+   "United Kingdom",                                // 228
+   "Turkey",                                        // 229
+   "Spain",                                         // 230
+   "Slovenia",                                      // 231
+   "Slovakia",                                      // 232
+   "Romania",                                       // 233
+   "Portugal",                                      // 234
+   "Poland",                                        // 235
+   "Norway",                                        // 236
+   "Netherlands",                                   // 237
+   "Luxembourg",                                    // 238
+   "Lithuania",                                     // 239
+   "Latvia",                                        // 240
+   "Italy",                                         // 241
+   "Iceland",                                       // 242
+   "Hungary",                                       // 243
+   "Greece",                                        // 244
+   "Germany",                                       // 245
+   "France",                                        // 246
+   "Estonia",                                       // 247
+   "Denmark",                                       // 248
+   "Czech Republic",                                // 249
+   "Croatia",                                       // 250
+   "Canada",                                        // 251
+   "Bulgaria",                                      // 252
+   "Belgium",                                       // 253
+   "Albania",                                       // 254
+   "JANUS special"                                  // 255
+};

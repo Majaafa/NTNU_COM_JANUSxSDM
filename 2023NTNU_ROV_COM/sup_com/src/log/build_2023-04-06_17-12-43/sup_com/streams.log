@@ -1,0 +1,22 @@
+[0.046s] Invoking command in '/home/wilhem/NTNU_ROV_COM/sup_com/src/build/sup_com': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wilhem/ros2_ws/install/my_pkg_test:/opt/ros/humble /usr/bin/cmake --build /home/wilhem/NTNU_ROV_COM/sup_com/src/build/sup_com -- -j4 -l4
+[0.349s] [35m[1mConsolidate compiler generated dependencies of target talker[0m
+[0.358s] [35m[1mConsolidate compiler generated dependencies of target listener[0m
+[0.414s] [ 25%] Built target masterListener
+[0.420s] [ 37%] [32mBuilding CXX object CMakeFiles/talker.dir/src/master_for_demo.cpp.o[0m
+[0.421s] [ 50%] [32mBuilding CXX object CMakeFiles/listener.dir/src/slave_for_demo.cpp.o[0m
+[0.424s] [ 75%] Built target nodeTalker
+[1.198s] [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/master_for_demo.cpp:13:10:[m[K [01;31m[Kfatal error: [m[K../../../../lib/janusxsdm/janusxsdm.cpp: No such file or directory
+[1.198s]    13 | #include [01;31m[K"../../../../lib/janusxsdm/janusxsdm.cpp"[m[K
+[1.199s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.199s] compilation terminated.
+[1.199s] [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/slave_for_demo.cpp:13:10:[m[K [01;31m[Kfatal error: [m[K../../../../lib/janusxsdm/janusxsdm.cpp: No such file or directory
+[1.199s]    13 | #include [01;31m[K"../../../../lib/janusxsdm/janusxsdm.cpp"[m[K
+[1.199s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.200s] compilation terminated.
+[1.203s] gmake[2]: *** [CMakeFiles/listener.dir/build.make:76: CMakeFiles/listener.dir/src/slave_for_demo.cpp.o] Error 1
+[1.203s] gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/listener.dir/all] Error 2
+[1.203s] gmake[1]: *** Waiting for unfinished jobs....
+[1.205s] gmake[2]: *** [CMakeFiles/talker.dir/build.make:76: CMakeFiles/talker.dir/src/master_for_demo.cpp.o] Error 1
+[1.205s] gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/talker.dir/all] Error 2
+[1.209s] gmake: *** [Makefile:146: all] Error 2
+[1.210s] Invoked command in '/home/wilhem/NTNU_ROV_COM/sup_com/src/build/sup_com' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wilhem/ros2_ws/install/my_pkg_test:/opt/ros/humble /usr/bin/cmake --build /home/wilhem/NTNU_ROV_COM/sup_com/src/build/sup_com -- -j4 -l4

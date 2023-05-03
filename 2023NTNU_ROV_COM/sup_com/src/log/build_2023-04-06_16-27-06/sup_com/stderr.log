@@ -1,0 +1,148 @@
+In file included from [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/slave_for_demo.cpp:13[m[K:
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:[m[K In member function ‘[01m[Kvoid janusxsdm::connection::sendSimple(std::string)[m[K’:
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:262:65:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+  262 |                     MyFile1121 << "Buffer: " << buffer << "\n"; [01;35m[Ksizeof(buffer)[m[K;
+      |                                                                 [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:373:34:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kconst size_type[m[K’ {aka ‘[01m[Kconst long unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  373 |                             if([01;35m[Kj != std::string::npos[m[K)
+      |                                [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:251:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knbytes[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  251 |                 int [01;35m[Knbytes[m[K;
+      |                     [01;35m[K^~~~~~[m[K
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:[m[K In member function ‘[01m[Kint janusxsdm::connection::decode(int16_t*, std::string&)[m[K’:
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:430:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbuf[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  430 |     int connection::decode([01;35m[Kint16_t buf[][m[K, std::string &message)
+      |                            [01;35m[K~~~~~~~~^~~~~[m[K
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:430:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmessage[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  430 |     int connection::decode(int16_t buf[], [01;35m[Kstd::string &message[m[K)
+      |                                           [01;35m[K~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:[m[K In member function ‘[01m[Kint janusxsdm::connection::listenSimple(std::string&)[m[K’:
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:528:23:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksdm_arg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  528 |                 char* [01;35m[Ksdm_arg[m[K[] = {arg1, arg2, (char*)scmd.c_str(), NULL};
+      |                       [01;35m[K^~~~~~~[m[K
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:572:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kconst size_type[m[K’ {aka ‘[01m[Kconst long unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  572 |                         if([01;35m[Kj != std::string::npos[m[K)
+      |                            [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/master_for_demo.cpp:13[m[K:
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:[m[K In member function ‘[01m[Kvoid janusxsdm::connection::sendSimple(std::string)[m[K’:
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:262:65:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+  262 |  buffer << "\n"; [01;35m[Ksizeof(buffer)[m[K;
+      |                  [01;35m[K^~~~~~~~~~~~~~[m[K
+
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:[m[K In member function ‘[01m[Kint janusxsdm::connection::listen(std::string&, std::chrono::duration<double>)[m[K’:
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:802:26:[m[K [01;31m[Kerror: [m[Kconflicting declaration ‘[01m[Kauto wend[m[K’
+  802 |                     auto [01;31m[Kwend[m[K = std::chrono::system_clock::now();
+      |                          [01;31m[K^~~~[m[K
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:792:26:[m[K [01;36m[Knote: [m[Kprevious declaration as ‘[01m[Kstd::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > > wend[m[K’
+  792 |                     auto [01;36m[Kwend[m[K = std::chrono::system_clock::now();
+      |                          [01;36m[K^~~~[m[K
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:803:51:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kstd::chrono::duration<double> elapsed_seconds[m[K’
+  803 |                     std::chrono::duration<double> [01;31m[Kelapsed_seconds[m[K = wend-wstart;
+      |                                                   [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:793:51:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::chrono::duration<double> elapsed_seconds[m[K’ previously declared here
+  793 |                     std::chrono::duration<double> [01;36m[Kelapsed_seconds[m[K = wend-wstart;
+      |                                                   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:804:33:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Ktime_t end_time[m[K’
+  804 |                     std::time_t [01;31m[Kend_time[m[K = std::chrono::system_clock::to_time_t(wend);
+      |                                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:794:33:[m[K [01;36m[Knote: [m[K‘[01m[Ktime_t end_time[m[K’ previously declared here
+  794 |                     std::time_t [01;36m[Kend_time[m[K = std::chrono::system_clock::to_time_t(wend);
+      |                                 [01;36m[K^~~~~~~~[m[K
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:373:34:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kconst size_type[m[K’ {aka ‘[01m[Kconst long unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  373 |             if([01;35m[Kj != std::string::npos[m[K)
+      |                [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:251:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knbytes[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  251 |                 int [01;35m[Knbytes[m[K;
+      |                     [01;35m[K^~~~~~[m[K
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:[m[K In member function ‘[01m[Kint janusxsdm::connection::decode(int16_t*, std::string&)[m[K’:
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:430:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbuf[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  430 | ::decode([01;35m[Kint16_t buf[][m[K, std::string &message)
+      |          [01;35m[K~~~~~~~~^~~~~[m[K
+
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:430:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmessage[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  430 | buf[], [01;35m[Kstd::string &message[m[K)
+      |        [01;35m[K~~~~~~~~~~~~~^~~~~~~[m[K
+
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:[m[K In member function ‘[01m[Kint janusxsdm::connection::listenSimple(std::string&)[m[K’:
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:528:23:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksdm_arg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  528 |            char* [01;35m[Ksdm_arg[m[K[] = {arg1, arg2, (char*)scmd.c_str(), NULL};
+      |                  [01;35m[K^~~~~~~[m[K
+
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:916:22:[m[K [01;31m[Kerror: [m[Kconflicting declaration ‘[01m[Kauto wend[m[K’
+  916 |                 auto [01;31m[Kwend[m[K = std::chrono::system_clock::now();
+      |                      [01;31m[K^~~~[m[K
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:894:22:[m[K [01;36m[Knote: [m[Kprevious declaration as ‘[01m[Kstd::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > > wend[m[K’
+  894 |                 auto [01;36m[Kwend[m[K = std::chrono::system_clock::now();
+      |                      [01;36m[K^~~~[m[K
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:917:47:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kstd::chrono::duration<double> elapsed_seconds[m[K’
+  917 |                 std::chrono::duration<double> [01;31m[Kelapsed_seconds[m[K = wend-wstart;
+      |                                               [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:895:47:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::chrono::duration<double> elapsed_seconds[m[K’ previously declared here
+  895 |                 std::chrono::duration<double> [01;36m[Kelapsed_seconds[m[K = wend-wstart;
+      |                                               [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:918:29:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Ktime_t end_time[m[K’
+  918 |                 std::time_t [01;31m[Kend_time[m[K = std::chrono::system_clock::to_time_t(wend);
+      |                             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:896:29:[m[K [01;36m[Knote: [m[K‘[01m[Ktime_t end_time[m[K’ previously declared here
+  896 |                 std::time_t [01;36m[Kend_time[m[K = std::chrono::system_clock::to_time_t(wend);
+      |                             [01;36m[K^~~~~~~~[m[K
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:572:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kconst size_type[m[K’ {aka ‘[01m[Kconst long unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  572 |             if([01;35m[Kj != std::string::npos[m[K)
+      |                [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:[m[K In member function ‘[01m[Kint janusxsdm::connection::listen(std::string&, std::chrono::duration<double>)[m[K’:
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:802:26:[m[K [01;31m[Kerror: [m[Kconflicting declaration ‘[01m[Kauto wend[m[K’
+  802 |             auto [01;31m[Kwend[m[K = std::chrono::system_clock::now();
+      |                  [01;31m[K^~~~[m[K
+
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:792:26:[m[K [01;36m[Knote: [m[Kprevious declaration as ‘[01m[Kstd::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > > wend[m[K’
+  792 |             auto [01;36m[Kwend[m[K = std::chrono::system_clock::now();
+      |                  [01;36m[K^~~~[m[K
+
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:803:51:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kstd::chrono::duration<double> elapsed_seconds[m[K’
+  803 | duration<double> [01;31m[Kelapsed_seconds[m[K = wend-wstart;
+      |                  [01;31m[K^~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:793:51:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::chrono::duration<double> elapsed_seconds[m[K’ previously declared here
+  793 | duration<double> [01;36m[Kelapsed_seconds[m[K = wend-wstart;
+      |                  [01;36m[K^~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:804:33:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Ktime_t end_time[m[K’
+  804 |      std::time_t [01;31m[Kend_time[m[K = std::chrono::system_clock::to_time_t(wend);
+      |                  [01;31m[K^~~~~~~~[m[K
+
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:794:33:[m[K [01;36m[Knote: [m[K‘[01m[Ktime_t end_time[m[K’ previously declared here
+  794 |      std::time_t [01;36m[Kend_time[m[K = std::chrono::system_clock::to_time_t(wend);
+      |                  [01;36m[K^~~~~~~~[m[K
+
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:916:22:[m[K [01;31m[Kerror: [m[Kconflicting declaration ‘[01m[Kauto wend[m[K’
+  916 |             auto [01;31m[Kwend[m[K = std::chrono::system_clock::now();
+      |                  [01;31m[K^~~~[m[K
+
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:894:22:[m[K [01;36m[Knote: [m[Kprevious declaration as ‘[01m[Kstd::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > > wend[m[K’
+  894 |             auto [01;36m[Kwend[m[K = std::chrono::system_clock::now();
+      |                  [01;36m[K^~~~[m[K
+
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:917:47:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kstd::chrono::duration<double> elapsed_seconds[m[K’
+  917 | duration<double> [01;31m[Kelapsed_seconds[m[K = wend-wstart;
+      |                  [01;31m[K^~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:895:47:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::chrono::duration<double> elapsed_seconds[m[K’ previously declared here
+  895 | duration<double> [01;36m[Kelapsed_seconds[m[K = wend-wstart;
+      |                  [01;36m[K^~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:918:29:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Ktime_t end_time[m[K’
+  918 |      std::time_t [01;31m[Kend_time[m[K = std::chrono::system_clock::to_time_t(wend);
+      |                  [01;31m[K^~~~~~~~[m[K
+
+[01m[K/home/wilhem/NTNU_ROV_COM/sup_com/src/sup_com/src/../../../../lib/janusxsdm/janusxsdm.cpp:896:29:[m[K [01;36m[Knote: [m[K‘[01m[Ktime_t end_time[m[K’ previously declared here
+  896 |      std::time_t [01;36m[Kend_time[m[K = std::chrono::system_clock::to_time_t(wend);
+      |                  [01;36m[K^~~~~~~~[m[K
+
+gmake[2]: *** [CMakeFiles/talker.dir/build.make:76: CMakeFiles/talker.dir/src/master_for_demo.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/talker.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/listener.dir/build.make:76: CMakeFiles/listener.dir/src/slave_for_demo.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/listener.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
