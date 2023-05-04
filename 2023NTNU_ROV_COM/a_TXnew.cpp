@@ -23,6 +23,7 @@
 using namespace std::chrono_literals;
 using namespace std;
 using std::placeholders::_1;
+float STREAMFS = 250000.0;
 
 std::string JANUSPATH = "lib/janus-c-3.0.5/bin/";
 std::string SDMPATH = "lib/sdmsh/";
@@ -33,7 +34,7 @@ int JANUS_TX_PORT = 9914;
 
 int main()
 { 
-    Evo_janusXsdm::connection modem(IP,JANUSPATH,SDMPATH, JANUS_RX_PORT,JANUS_TX_PORT); //Constructing a connection object;
+    Evo_janusXsdm::connection modem(IP,JANUSPATH,SDMPATH, JANUS_RX_PORT,JANUS_TX_PORT,STREAMFS); //Constructing a connection object;
     modem.sdmConfigAir();
     std::this_thread::sleep_for(500ms);        //Mainly for debugging
     modem.setPreamble();

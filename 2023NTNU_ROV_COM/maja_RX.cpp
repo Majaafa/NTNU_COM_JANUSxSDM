@@ -30,7 +30,7 @@ using namespace std;
 string JANUSPATH = "lib/janus-c-3.0.5/bin/";
 string SDMPATH = "lib/sdmsh/";
 
-int JANUS_RX_PORT = 9938;
+int JANUS_RX_PORT = 9955;
 int JANUS_TX_PORT = 9955;
 string IP = "192.168.0.189";
 float STREAMFS = 250000.0;
@@ -98,9 +98,15 @@ int main()
 while(true)
 {
 
+                                     // "+ x", sike med +x pr sending      
+    //string message =  to_string(tall);
+    string message = "halo";        
+    modem.startTX(message);  
+    std::this_thread::sleep_for(6000ms); 
+
     std::array<std::string,6> noe2 = modem.listenOnceTheFoolproofRX(responsOnce);
     std::cout << "\n\nMessage: " << noe2[0] <<" \n" << "CRC (8 bits): " <<noe2[1]<<" \n" "Cargo size: " <<noe2[2] <<" \n" "Reservation Time: " <<noe2[3] <<" \n" "Size_of(janus_char): " <<noe2[4] <<" \n" "janus_char: " <<noe2[5] <<"\n"<< std::endl;
-    this_thread::sleep_for(500ms); 
+    this_thread::sleep_for(2000ms); 
 }
  
     
