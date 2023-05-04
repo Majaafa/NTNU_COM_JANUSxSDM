@@ -71,7 +71,7 @@ int main()
     modem.setPreamble();
     this_thread::sleep_for(500ms);        //Mainly for debugging
 
-/*
+
     //while ???wilhelm?
     int fd_listen = modem.startRX();
     this_thread::sleep_for(500ms); 
@@ -93,8 +93,8 @@ int main()
     
     close(fd_listen);
 
-*/
 
+/*
 while(true)
 {
 
@@ -108,6 +108,6 @@ while(true)
     std::cout << "\n\nMessage: " << noe2[0] <<" \n" << "CRC (8 bits): " <<noe2[1]<<" \n" "Cargo size: " <<noe2[2] <<" \n" "Reservation Time: " <<noe2[3] <<" \n" "Size_of(janus_char): " <<noe2[4] <<" \n" "janus_char: " <<noe2[5] <<"\n"<< std::endl;
     this_thread::sleep_for(2000ms); 
 }
- 
+*/
     
 }
