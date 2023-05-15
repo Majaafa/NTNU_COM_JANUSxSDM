@@ -1,0 +1,2 @@
+TODO for 
++ In getNumberOfSamples(std::string message)    Time after need to be tested, 500ms is good, will depend on size of cargo.

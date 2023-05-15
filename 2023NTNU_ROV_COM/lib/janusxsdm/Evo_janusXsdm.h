@@ -18,6 +18,8 @@ namespace Evo_janusXsdm
         // Creats a wav. file and make some calulations, there are limitations to the size of message
         float getNumberOfSamples(std::string message); 
 
+        float ToRawFileTX(std::string message); 
+
         // Will return the reservation time for a janus pkg
         // Need number of samples from a janus pkg
         // There are one number that is hardcoded for stream-fs 250000, recemeded sulution is to run "printNumberOfSamples" and dont add a cargo (message = ""), this will get samples of an emty cargo. Add this new value to "samples_no_cargo"
@@ -50,12 +52,22 @@ namespace Evo_janusXsdm
         //Need to run a "sdmConfig.." and a "setPreamble" before first time running this commands. 
         void startTX(std::string message); //sends message
 
-        //Part of RX fam: -> read dokumentation before use 
-        //Begins the sdmsh and janus commands for RX, 
-        //Creates a pipe connected to a output stream from janus, read end of pipe is returned (pipe[0])
-        //1. Need to set modem in PHY mode 
-        //2. Need to run a "sdmConfig.." and a "setPreamble" before first time running this commands.
-        int startRX(); //begins the sdmsh and janus commands and creates a pipe and return read side of pipe (pipe[0])
+        /**
+         * @brief Begins the SDM and Janus commands for RX and creates a pipe.
+         * 
+         * This function starts the SDM and Janus commands for RX, creating a pipe connected to the output stream from Janus. It returns the read end of the pipe (pipe[0]).
+         * 
+         * @note -Part of RX_FAM (se Documentation)
+         * 
+         * @note -Before using this function, ensure the following:
+         *   1. The modem is set in PHY mode.
+         *   2. The "sdmConfig()" and "setPreamble()" commands have been executed.
+         * 
+         * @warning RX_FAM: Incorrect use of this function can damage the EVO modems and cause performance issues (zombies and more).
+         * 
+         * @return The read end of a pipe, (pipe[0]).
+         */
+        int startRX(); 
 
         //Part of RX fam: -> read dokumentation before use 
         //RX fam: will listen to the pipe from startRX and return message if recieved or timeout
@@ -70,9 +82,19 @@ namespace Evo_janusXsdm
         void closePipeRX(int &pipe); 
 
         //For finding he number of samples from janus wav, can use this to debug or learn about janus and TCP. For fun. 
-        void printNumberOfSamples(std::string message);
+        //void printNumberOfSamples(std::string message);
 
         void dummyFlushJanusTX();
+
+
+        // whant to rederect stream to a file and stor it. can then see size 
+        // and decode it in janus many times. 
+        // raw:<filename> .raw .bin .dmp .fifo
+        int SdmshTORawFile();
+
+
+        int JanusFromRawFile();
+
         
     };
 }

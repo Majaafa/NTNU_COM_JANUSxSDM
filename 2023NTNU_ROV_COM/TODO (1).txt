@@ -1,0 +1,45 @@
+TODO: 
++In getNumberOfSamples(): Time after needs to be tested. 500ms seems good, but it will depend on the size of the cargo. Consider creating a function to calculate how long it will take.
++In getPacketReservTime(): samples_no_cargo is hardcoded. It should be fixed in the future. 
++In ToRawFileTX(): The function can be changed to void since it doesn't need to return a value.
++In config(): Add an option to choose the threshold.
++In startTX(): Wait for Janus and sdmsh to exit. This can be used to determine if there is a fault in the TX. If we wait too long, something is wrong. Consider using poll.
++In startTX(): Add an optional variable for the time before exiting poll.
++In startTX(): Consider using waitpid with poll to handle potential errors and read error messages.
++In listenRX(): Add an optional variable for the poll timeout.
++In listenRX(): Remove std::this_thread::sleep_for(500ms). It may not be necessary.
++When using poll, remove non-blocking mode. It will improve performance. Test the code after removing it. (was orginaly taken away by us)
+-This is something that can cause the read to enter else when the pipe is empty. Test it by removing non-blocking mode.
++In listenRX(): Close the pipe in the read() else{} block.
++In listenRX(): Add an option to print the janusframe to a file for easier reading. 
+
++ add real comments to all, Doxygen-style 
+@brief: Provides a brief description of the function or member.
+@param: Documents the parameters of the function.
+@return: Describes the return value or behavior of the function.
+@note: Provides additional notes or information.
+@warning: Indicates a potential issue or warning.
+@see: References related functions, classes, or documentation.
+
+
+Future: 
+There are alot of errors that have not been handeled in a proper way. We need to do more testing and impliment new metods for detecting and handeling errors
+- Error: on the modems, look at feedback from streams.
+- Error: in janus: look at feedback from streams 
+- Error: on the system, handling of processes
+- Error pipes and other stuff like this
+
+
+
+
+
+
+
+Old comments: 
+startRX: 
+        //Part of RX fam: -> read dokumentation before use 
+        //Begins the sdmsh and janus commands for RX, 
+        //Creates a pipe connected to a output stream from janus, read end of pipe is returned (pipe[0])
+        //1. Need to set modem in PHY mode 
+        //2. Need to run a "sdmConfig.." and a "setPreamble" before first time running this commands.
+
