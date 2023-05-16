@@ -31,7 +31,7 @@ int JANUS_RX_PORT = 9955;
 int JANUS_TX_PORT = 9955;
 float STREAMFS = 250000.0;
 
-//Global
+//Global variables
 std::string response;
 int listenCount = 0;
 
@@ -54,7 +54,9 @@ int main()
     while(listenCount<3){
         std::string respons;
         std::array<std::string,4> responsFromFrame = modem.listenRX(fd_listen, respons);
-        std::cout << "\n\nMessage: " << responsFromFrame[0] <<" \n" << "CRC (8 bits): " <<responsFromFrame[1]<<" \n" "Cargo size: " <<responsFromFrame[2] <<" \n" "Reservation Time: " <<responsFromFrame[3] <<"\n"<< std::endl;
+        std::cout << "\n\nMessage: " << responsFromFrame[0] <<" \n" << "CRC (8 bits): " <<responsFromFrame[1]
+        <<" \n" "Cargo size: " <<responsFromFrame[2] <<" \n" "Reservation Time: " <<responsFromFrame[3] 
+        <<"\n"<< std::endl;
         ++listenCount;
     }
     

@@ -20,8 +20,6 @@
 
 #include "../lib/janusxsdm/Evo_janusXsdm.cpp"
 
-using std::placeholders::_1;//?
-
 //Constructor parameters for Evo_janusXsdm.h
 std::string JANUSPATH = "../lib/janus-c-3.0.5/bin/";
 std::string SDMPATH = "../lib/sdmsh/";
@@ -30,7 +28,7 @@ int JANUS_RX_PORT = 9920;
 int JANUS_TX_PORT = 9914;
 float STREAMFS = 250000.0;
 
-//Global
+//Global variables
 std::string myString = "1";
 std::string comment;
 
