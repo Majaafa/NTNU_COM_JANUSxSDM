@@ -1,2 +1,0 @@
-Invoking command in '/home/wilhem/NTNU_ROV_COM/sup_com/src/build/sup_com': CMAKE_PREFIX_PATH=/home/wilhem/ros2_ws/install/my_pkg_test:/opt/ros/humble /usr/bin/cmake --build /home/wilhem/NTNU_ROV_COM/sup_com/src/build/sup_com -- -j4 -l4
-Invoked command in '/home/wilhem/NTNU_ROV_COM/sup_com/src/build/sup_com' returned '2': CMAKE_PREFIX_PATH=/home/wilhem/ros2_ws/install/my_pkg_test:/opt/ros/humble /usr/bin/cmake --build /home/wilhem/NTNU_ROV_COM/sup_com/src/build/sup_com -- -j4 -l4

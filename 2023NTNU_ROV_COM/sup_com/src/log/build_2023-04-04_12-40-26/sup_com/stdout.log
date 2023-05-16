@@ -1,4 +1,0 @@
-[ 12%] [32mBuilding CXX object CMakeFiles/talker.dir/src/master_for_demo.cpp.o[0m
-[ 25%] [32mBuilding CXX object CMakeFiles/listener.dir/src/slave_for_demo.cpp.o[0m
-[ 50%] Built target nodeTalker
-[ 75%] Built target masterListener

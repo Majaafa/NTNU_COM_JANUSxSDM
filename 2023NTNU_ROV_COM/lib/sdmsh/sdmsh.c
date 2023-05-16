@@ -156,8 +156,6 @@ void sdmsh_update_promt_state(sdm_session_t *ss, char *host)
 int main(int argc, char *argv[])
 {
 
-    pid_t pidtoexec = getpid(); //Wm 
-    fprintf(stderr, "%d:PIDKLAR\n", pidtoexec);// WM
 
     char *progname, *host;
     int rc = 0;

@@ -60,7 +60,7 @@ namespace Evo_janusXsdm
     int 
     connection::sdmConfigAir()
     {
-        std::string sdmcommand = "(cd " + SPATH + " && ./sdmsh " + mIP + " -e 'stop;config 0 0 3 0')";
+        std::string sdmcommand = "(cd " + SPATH + " && ./sdmsh " + mIP + " -e 'stop;config 8 0 3 0')";
         FILE* terminal = popen(sdmcommand.c_str(), "r"); 
         pclose(terminal);
         std::cout << "Modem with IP: " << mIP << " configured." << std::endl;
@@ -436,14 +436,14 @@ namespace Evo_janusXsdm
         }
     }
 
-     std::array<std::string,6> 
+     std::array<std::string,4> 
      connection::listenOnceTheFoolproofRX(std::string &message)
     {
         // Setup pipe and start sdmsh and janus,  return pipe for Error stream from Jansu
         int fd_pipe = startRX();
 
         // Beginn listen process (TImout in poll decide how long it will live if no message)
-        std::array<std::string,6> fromRX = listenRX(fd_pipe,message);
+        std::array<std::string,4> fromRX = listenRX(fd_pipe,message);
 
         // Close read end of the pipe
         closePipeRX(fd_pipe);
@@ -454,7 +454,7 @@ namespace Evo_janusXsdm
         return fromRX;
     }
 
-    std::array<std::string,6> 
+    std::array<std::string,4> 
     connection::listenRX(int infoFromJanus, std::string &message)
     {
         std::string idStr = "Packet         :   Payload                                    : ";
@@ -472,7 +472,7 @@ namespace Evo_janusXsdm
 
         while(true)
         {    
-            std::array<std::string,6> myArray; 
+            std::array<std::string,4> myArray; 
 
             //Setting up poll() for read from pipe:
             pfd.fd = infoFromJanus;
@@ -536,7 +536,7 @@ namespace Evo_janusXsdm
                     CargoSize = findInJanus_frame(idCargoSize,janus_frame);
                     RT = findInJanus_frame(idRT,janus_frame);
                    
-                    myArray= {message,CRC,CargoSize,RT,std::to_string(strlen(janus_char)),std::to_string(janus_frame.length())}; 
+                    myArray= {message,CRC,CargoSize,RT}; 
                     if(message != "nei")                        // npos error handeling for .find(), if the sring is not found.                     
                     {
                     janus_frame = "";

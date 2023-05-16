@@ -1,8 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target talker[0m
-[35m[1mConsolidate compiler generated dependencies of target listener[0m
-[ 12%] [32mBuilding CXX object CMakeFiles/talker.dir/src/master_for_demo.cpp.o[0m
-[ 25%] [32mBuilding CXX object CMakeFiles/nodeTalker.dir/src/publish_to_slave.cpp.o[0m
-[ 50%] Built target masterListener
-[ 62%] [32mBuilding CXX object CMakeFiles/listener.dir/src/slave_for_demo.cpp.o[0m
-[ 75%] [32m[1mLinking CXX executable nodeTalker[0m
-[ 75%] Built target nodeTalker

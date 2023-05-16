@@ -69,9 +69,6 @@ struct driver_t drivers[] = {
 
 int sdmsh_stream_new(sdm_session_t *ss, int direction, char *parameter)
 {
-    pid_t pidtoexec = getpid(); //Wm 
-    fprintf(stderr, "%d:PIDKLAR\n", pidtoexec);// WM
-
     char *arg = strdup(parameter);
     char *default_drv = "ascii";
     char *drv, *drv_param;
