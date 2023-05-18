@@ -1,14 +1,12 @@
 /*some cool stuff*/
 
-#include<iostream>
-#include<fstream>
-#include<stdlib.h>
-#include<string.h>
-#include<chrono>
-#include<unistd.h>
-#include<signal.h>
 #include <iostream>
 #include <fstream>
+#include <stdlib.h>
+#include <string.h>
+#include <chrono>
+#include <unistd.h>
+#include <signal.h>
 #include <string>
 #include <vector>
 #include <sstream>

@@ -30,24 +30,33 @@ float STREAMFS = 250000.0;
 
 //Global variables
 std::string responsOnce;
+std::string myString;
 
 int main()
 { 
     //Constructing a connection object
     Evo_janusXsdm::connection modem(IP, JANUSPATH, SDMPATH, JANUS_RX_PORT, JANUS_TX_PORT, STREAMFS); 
 
-    //Configures modem and sets preamble
+    //Configures modem for air test and sets preamble
     modem.sdmConfigAir();
     std::this_thread::sleep_for(500ms);         //TODO:Test if sleep is needed
     modem.setPreamble();
     std::this_thread::sleep_for(500ms);         //TODO:Test if sleep is needed
 
     while(true)
-    {
+    {   
+        //listens for a JANUS packet for 30 seconds
         std::array<std::string,4> responsFromFrame = modem.listenOnceTheFoolproofRX(responsOnce);
         std::cout << "\n\nMessage: " << responsFromFrame[0] <<" \n" << "CRC (8 bits): " <<responsFromFrame[1]
         <<" \n" "Cargo size: " <<responsFromFrame[2] <<" \n" "Reservation Time: " <<responsFromFrame[3] 
         <<"\n"<< std::endl;
-        //this_thread::sleep_for(2000ms);       //used for debugging
+        std::this_thread::sleep_for(500ms);       //break between listening and sending
+
+        //sending a JANUS packet with myString as cargo
+        std::cout <<"Write a message: " <<std::endl;
+        std::getline(std::cin,myString);
+        modem.startTX(myString);  
+        std::this_thread::sleep_for(500ms);    //break between sending and listening
+
     }
 }
