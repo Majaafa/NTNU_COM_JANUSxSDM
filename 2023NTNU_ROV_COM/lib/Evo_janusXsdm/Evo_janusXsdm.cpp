@@ -437,7 +437,7 @@ namespace Evo_janusXsdm
     }
 
      std::array<std::string,4> 
-     connection::listenOnceTheFoolproofRX(std::string &message)
+     connection::listenOnceRXsimple(std::string &message)
     {
         // Setup pipe and start sdmsh and janus,  return pipe for Error stream from Jansu
         int fd_pipe = startRX();
@@ -455,7 +455,7 @@ namespace Evo_janusXsdm
     }
 
     std::array<std::string,4> 
-    connection::listenRX(int infoFromJanus, std::string &message)
+    connection::listenRX(int readJanusPipe, std::string &message)
     {
         std::string idStr = "Packet         :   Payload                                    : ";
         std::string idRT = "Packet         :     Reservation Time (7 bits)                : ";
@@ -475,7 +475,7 @@ namespace Evo_janusXsdm
             std::array<std::string,4> myArray; 
 
             //Setting up poll() for read from pipe:
-            pfd.fd = infoFromJanus;
+            pfd.fd = readJanusPipe;
             pfd.events = POLLIN;
             int gatekeeper = poll(&pfd, 1, timeout);
             if (gatekeeper == -1) 
@@ -490,7 +490,7 @@ namespace Evo_janusXsdm
             } 
             else 
             {
-                int rdstate = read(infoFromJanus, &janus_char, sizeof(janus_char));
+                int rdstate = read(readJanusPipe, &janus_char, sizeof(janus_char));
                 switch (rdstate){
                     case -1:                    
                         if(errno == EAGAIN)                             //Read(): Error handler, if empty 
@@ -529,12 +529,12 @@ namespace Evo_janusXsdm
                 // Look For A Massage In String Janus frame. 
                 if(janus_frame.find("Packet         : Cargo (ASCII)                                :") != std::string::npos)
                 {
-                    message = findInJanus_frame(idStr,janus_frame);
+                    message = findInJanusFrame(idStr,janus_frame);
                     std::string CRC, CargoSize, RT;
 
-                    CRC = findInJanus_frame(idCRC,janus_frame);
-                    CargoSize = findInJanus_frame(idCargoSize,janus_frame);
-                    RT = findInJanus_frame(idRT,janus_frame);
+                    CRC = findInJanusFrame(idCRC,janus_frame);
+                    CargoSize = findInJanusFrame(idCargoSize,janus_frame);
+                    RT = findInJanusFrame(idRT,janus_frame);
                    
                     myArray= {message,CRC,CargoSize,RT}; 
                     if(message != "nei")                        // npos error handeling for .find(), if the sring is not found.                     
@@ -546,7 +546,7 @@ namespace Evo_janusXsdm
                 }
             }
         }
-        return {"NaN","NaN","NaN","Batman"};
+        return {"NaN","NaN","NaN","NaN"};
     }
 
     void 
@@ -567,19 +567,19 @@ namespace Evo_janusXsdm
     }
 
     std::string 
-    connection::findInJanus_frame(std::string idStr,std::string janusframe)
+    connection::findInJanusFrame(std::string idStr,std::string janusFrame)
     {
         //Look For A Massage In String: "janusframe"
         std::string endStr = "\n";
         size_t spos, epos, pos; 
 
-        pos = janusframe.find(idStr);
+        pos = janusFrame.find(idStr);
 
         if(pos != std::string::npos)                        // npos error handeling for .find(), if the sring is not found.                     
         {
             spos = pos + idStr.length();
-            epos = janusframe.find(endStr, spos);
-            std::string responseFrame = janusframe.substr(spos, epos-spos);
+            epos = janusFrame.find(endStr, spos);
+            std::string responseFrame = janusFrame.substr(spos, epos-spos);
             return responseFrame;
         }
         else
@@ -657,7 +657,7 @@ namespace Evo_janusXsdm
     }
 
     int
-    connection::SdmshTORawFile() //for debug 
+    connection::SdmshToRawFile() //for debug 
     {
         // Creat fork, dummy 
         pid_t dummy_pid = fork();                

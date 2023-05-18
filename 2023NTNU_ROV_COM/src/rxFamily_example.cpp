@@ -18,7 +18,7 @@
 #include <poll.h>
 #include <array>
 
-#include "../lib/janusxsdm/Evo_janusXsdm.cpp"
+#include "../lib/Evo_janusXsdm/Evo_janusXsdm.cpp"
 
 //Constructor parameters for Evo_janusXsdm.h
 std::string JANUSPATH = "../lib/janus-c-3.0.5/bin/";

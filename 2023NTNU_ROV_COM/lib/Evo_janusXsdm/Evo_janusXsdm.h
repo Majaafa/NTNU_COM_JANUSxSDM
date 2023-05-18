@@ -25,7 +25,7 @@ namespace Evo_janusXsdm
         // There are one number that is hardcoded for stream-fs 250000, recemeded sulution is to run "printNumberOfSamples" and dont add a cargo (message = ""), this will get samples of an emty cargo. Add this new value to "samples_no_cargo"
         float getPacketReservTime(float samplesCount);
 
-        std::string findInJanus_frame(std::string idStr,std::string janusframe);
+        std::string findInJanusFrame(std::string idStr,std::string janusFrame);
 
     public:
         //Constructor, takes IPv4 of acoustic modem, paths to janus and sdmsh executables and ports to reserve for janus encoding/decoding
@@ -45,7 +45,7 @@ namespace Evo_janusXsdm
         // NOT part of RX fam!
         // EZ to use, for dummies, will cleanup its selfe, no inseption,  
         //Need to run a "sdmConfig.." and a "setPreamble" before first time running this commands.
-        std::array<std::string,4> listenOnceTheFoolproofRX(std::string &message);
+        std::array<std::string,4> listenOnceRXsimple(std::string &message);
 
         //TX: sends message
         //Need to set modem in PHY mode 
@@ -71,7 +71,7 @@ namespace Evo_janusXsdm
 
         //Part of RX fam: -> read dokumentation before use 
         //RX fam: will listen to the pipe from startRX and return message if recieved or timeout
-        std::array<std::string,4> listenRX(int infoFromJanus,std::string &message); //will listen to the pipe from startRX and return message if recieved or timeout
+        std::array<std::string,4> listenRX(int readpipe,std::string &message); //will listen to the pipe from startRX and return message if recieved or timeout
 
         //Part of RX fam: -> read dokumentation before use 
         //Will crash the RX processes 
@@ -90,7 +90,7 @@ namespace Evo_janusXsdm
         // whant to rederect stream to a file and stor it. can then see size 
         // and decode it in janus many times. 
         // raw:<filename> .raw .bin .dmp .fifo
-        int SdmshTORawFile();
+        int SdmshToRawFile();
 
 
         int JanusFromRawFile();

@@ -18,7 +18,7 @@
 #include <poll.h>
 #include <array>
 
-#include "../lib/janusxsdm/Evo_janusXsdm.cpp"
+#include "../lib/Evo_janusXsdm/Evo_janusXsdm.cpp"
 
 //Constructor parameters for Evo_janusXsdm.h
 std::string JANUSPATH = "../lib/janus-c-3.0.5/bin/";
@@ -46,17 +46,17 @@ int main()
     while(true)
     {   
         //listens for a JANUS packet for 30 seconds
-        std::array<std::string,4> responsFromFrame = modem.listenOnceTheFoolproofRX(responsOnce);
+        std::array<std::string,4> responsFromFrame = modem.listenOnceRXsimple(responsOnce);
         std::cout << "\n\nMessage: " << responsFromFrame[0] <<" \n" << "CRC (8 bits): " <<responsFromFrame[1]
         <<" \n" "Cargo size: " <<responsFromFrame[2] <<" \n" "Reservation Time: " <<responsFromFrame[3] 
         <<"\n"<< std::endl;
-        std::this_thread::sleep_for(500ms);       //break between listening and sending
+        std::this_thread::sleep_for(500ms);       //500ms break between listening and sending
 
         //sending a JANUS packet with myString as cargo
         std::cout <<"Write a message: " <<std::endl;
         std::getline(std::cin,myString);
         modem.startTX(myString);  
-        std::this_thread::sleep_for(500ms);    //break between sending and listening
+        std::this_thread::sleep_for(500ms);    //500ms break between sending and listening
 
     }
 }
