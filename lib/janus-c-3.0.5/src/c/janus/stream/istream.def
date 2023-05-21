@@ -1,0 +1,19 @@
+ISTREAM(null)
+ISTREAM(raw)
+ISTREAM(wav)
+ISTREAM(fifo)
+ISTREAM(tcp)
+
+#ifdef JANUS_WITH_ALSA
+ISTREAM(alsa)
+#endif
+
+#ifdef JANUS_WITH_PULSE
+ISTREAM(pulse)
+#endif
+
+#ifdef JANUS_WITH_WMM
+ISTREAM(wmm)
+#endif
+
+#undef ISTREAM
