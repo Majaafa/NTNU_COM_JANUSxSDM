@@ -1,15 +1,9 @@
-# UDOP2023
+# NTNU_COM_JANUSxSDM 2023
 This is continued work from an earlier project: https://github.com/markerv/NTNU_ROV_COM
 
 For this project was VirtualBox used: https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview
-## ROS 2
-%First install the ROS2 library, in this project Huble Hawksbill was used: LINK
-.....
-## Code
-Download code from this GitHub:
-```
 
-```
+
 ## Install
 
 To get started you will need to install the following in the linux terminal:
@@ -55,11 +49,6 @@ cmake -S . -B bin/
 cd bin
 make .
 sudo make install
-```
-### ROS 2
-
-```
-
 ```
 
 ## Modem setup
