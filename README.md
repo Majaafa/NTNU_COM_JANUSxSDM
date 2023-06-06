@@ -1,5 +1,7 @@
 # NTNU_COM_JANUSxSDM 2023
 This is continued work from an earlier project: https://github.com/markerv/NTNU_ROV_COM
+The SDMSH library used is found on this GitHub: https://github.com/EvoLogics/sdmsh
+More details for the JANUS library used can be found on the JANUS wiki: https://www.januswiki.com/tiki-index.php
 
 For this project was VirtualBox used: https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview
 
