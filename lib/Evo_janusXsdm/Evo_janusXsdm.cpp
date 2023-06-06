@@ -437,7 +437,7 @@ namespace Evo_janusXsdm
     }
 
      std::array<std::string,4> 
-     connection::listenOnceRXsimple(std::string &message, int polltime)
+     connection::listenOnceRXsimple(std::string &message, int timeout)
     {
         // Setup pipe and start sdmsh and janus,  return pipe for Error stream from Jansu
         std::cout << "for startRX"<<std::endl;
@@ -446,7 +446,7 @@ namespace Evo_janusXsdm
 
         // Beginn listen process (TImout in poll decide how long it will live if no message)
         std::cout << "for listenRX"<<std::endl;
-        std::array<std::string,4> fromRX = listenRX(fd_pipe,message,polltime);
+        std::array<std::string,4> fromRX = listenRX(fd_pipe,message,timeout);
         std::cout << "etter listenRX"<<std::endl;
         // Close read end of the pipe
         std::cout << "for closepipeRX"<<std::endl;

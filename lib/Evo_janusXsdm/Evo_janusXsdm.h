@@ -45,7 +45,7 @@ namespace Evo_janusXsdm
         // NOT part of RX fam!
         // EZ to use, for dummies, will cleanup its selfe, no inseption,  
         //Need to run a "sdmConfig.." and a "setPreamble" before first time running this commands.
-        std::array<std::string,4> listenOnceRXsimple(std::string &message, int polltime);
+        std::array<std::string,4> listenOnceRXsimple(std::string &message, int timeout);
 
         //TX: sends message
         //Need to set modem in PHY mode 
