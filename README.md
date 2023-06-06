@@ -65,12 +65,5 @@ For the code to run in ros.....
 ```
 
 ```
-
-
-## Additional (Visual Studio Code)
-In this project VS code was used. Download in linux terminal: 
-```
-
-```
 ## Problems with the code
 ## TIPS :)
