@@ -31,11 +31,11 @@ make
 sudo make install
 make check
 ```
-### compiling 
+### Compiling 
 
 For a virtual machine: compile the SDMSH library.
 ```
-cd lib/smdmsh
+cd lib/sdmsh
 make
 ```
 For the PI: the SDMSH folder should be deleted and cloned again before compiling.

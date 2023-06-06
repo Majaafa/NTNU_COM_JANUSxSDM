@@ -33,6 +33,7 @@ float STREAMFS = 250000.0;
 
 //Global variables
 std::string responsOnce;
+int timeout = 60000;
 
 int main()
 { 
@@ -52,7 +53,7 @@ int main()
 
     while(true)
     {
-        std::array<std::string,4> responsFromFrame = modem.listenOnceRXsimple(responsOnce);
+        std::array<std::string,4> responsFromFrame = modem.listenOnceRXsimple(responsOnce,timeout);
         std::cout << "\n\nMessage: " << responsFromFrame[0] <<" \n" << "CRC (8 bits): " <<responsFromFrame[1]
         <<" \n" "Cargo size: " <<responsFromFrame[2] <<" \n" "Reservation Time: " <<responsFromFrame[3] 
         <<"\n"<< std::endl;
