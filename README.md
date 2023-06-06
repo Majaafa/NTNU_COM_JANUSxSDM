@@ -3,6 +3,8 @@ This is continued work from an earlier project: https://github.com/markerv/NTNU_
 
 For this project was VirtualBox used: https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview
 
+(link to algorithm developed in the same project: https://github.com/Halvor/Optimization)
+
 
 ## Install
 
