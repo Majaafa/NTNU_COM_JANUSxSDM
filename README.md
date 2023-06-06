@@ -16,54 +16,45 @@ sudo apt install build-essential
 sudo snap install cmake --classic
 ```
 
+### libreadline
+```
+sudo apt-get install libreadline-dev
+```
+## Implementation 
+
 ### FFTW3
 
 ```
-wget http://fftw.org/fftw-3.3.10.tar.gz
-tar -xzf fftw-3.3.10.tar.gz
-cd fftw-3.3.10
+cd lib/fftw/fftw-3.3.10/
 ./configure
 make
 sudo make install
 make check
 ```
+### compiling 
 
-### Install libreadline
+For a virtual machine: compile the SDMSH library.
 ```
-sudo apt-get install libreadline-dev
+cd lib/smdmsh
+make
 ```
-
-
-## Compiling
-
-### SDMSH
-"$project/lib/":
+For the PI: the SDMSH folder should be deleted and cloned again before compiling.
 ```
+cd lib/
+rm -r sdmsh/
+git clone https://github.com/evologics/sdmsh.git
+cd sdmsh/
 make
 ```
 
-### JANUS
-"$project/lib/janus-c-3.0.5/":
+Setup and compile the Janus-c-3.0.5 library:
 ```
+cd lib/janus-c-3.0.5/
 cmake -S . -B bin/
 cd bin
-make .
+make
 sudo make install
 ```
-
-## Modem setup
-This step must be done for each modem, every time they are turned on:
-```
-nc ModemIP 9200
-+++ATP
-```
-
-## Raspberry Pi setup
-
-## Run code with ROS
-For the code to run in ros.....
-```
-
-```
 ## Problems with the code
+
 ## TIPS :)
