@@ -26,7 +26,7 @@ The code below switches between receiving and transmitting the JANUS packets
 //Constructor parameters for Evo_janusXsdm.h
 std::string JANUSPATH = "../lib/janus-c-3.0.5/bin/";
 std::string SDMPATH = "../lib/sdmsh/";
-std::string IP = "192.168.0.199";
+std::string IP = "192.168.0.198";
 int JANUS_RX_PORT = 9955;
 int JANUS_TX_PORT = 9955;
 float STREAMFS = 250000.0;

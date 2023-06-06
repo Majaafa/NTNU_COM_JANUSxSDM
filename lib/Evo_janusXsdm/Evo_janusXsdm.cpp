@@ -60,7 +60,7 @@ namespace Evo_janusXsdm
     int 
     connection::sdmConfigAir()
     {
-        std::string sdmcommand = "(cd " + SPATH + " && ./sdmsh " + mIP + " -e 'stop;config 20 0 3 0')";
+        std::string sdmcommand = "(cd " + SPATH + " && ./sdmsh " + mIP + " -e 'stop;config 30 0 3 0')";
         FILE* terminal = popen(sdmcommand.c_str(), "r"); 
         pclose(terminal);
         std::cout << "Modem with IP: " << mIP << " configured." << std::endl;
@@ -440,16 +440,22 @@ namespace Evo_janusXsdm
      connection::listenOnceRXsimple(std::string &message)
     {
         // Setup pipe and start sdmsh and janus,  return pipe for Error stream from Jansu
+        std::cout << "for startRX"<<std::endl;
         int fd_pipe = startRX();
+        std::cout << "etter startRX"<<std::endl;
 
         // Beginn listen process (TImout in poll decide how long it will live if no message)
+        std::cout << "for listenRX"<<std::endl;
         std::array<std::string,4> fromRX = listenRX(fd_pipe,message);
-
+        std::cout << "etter listenRX"<<std::endl;
         // Close read end of the pipe
+        std::cout << "for closepipeRX"<<std::endl;
         closePipeRX(fd_pipe);
-
+        std::cout << "etter closepipeRX"<<std::endl;
+        std::cout << "for stopRX"<<std::endl;
         // Close SDMSH and JANUS process, crash metod. 
         stopRX();
+        std::cout << "etter stopRX"<<std::endl;
 
         return fromRX;
     }
@@ -463,6 +469,7 @@ namespace Evo_janusXsdm
         std::string idCRC = "Packet         :   CRC (8 bits)                               : ";
         std::string idCargoSize = "Packet         :   Cargo Size                                 : ";
 
+        //int readJanusPipe[2];  
         std::string janus_frame;
         char janus_char[1024] = {};
 
@@ -477,31 +484,49 @@ namespace Evo_janusXsdm
 
             //Setting up poll() for read from pipe:
             pfd.fd = readJanusPipe;
-            pfd.events = POLLIN;
+            pfd.events = POLLIN | POLLERR | POLLHUP;
+            //std::cout <<"before poll" <<std::endl;
             int gatekeeper = poll(&pfd, 1, timeout);
             if (gatekeeper == -1) 
             {
+                std::cout << "poll-1"<<std::endl;
                 perror("poll");
                 break;
             }
             else if (gatekeeper== 0) 
             {
+                std::cout << "poll0"<<std::endl;
                 std::cout << "Exit on timeout (In poll)"<< std::endl;
                 break;
-            } 
+            }
             else 
             {
+                if(pfd.revents & POLLIN){
+                    std::cout << "POLLIN"<< std::endl;
+                }
+                if(pfd.revents & POLLHUP){
+                    std::cout << "POLLHUP"<< std::endl;
+                    break;
+                }
+                if(pfd.revents & POLLERR){
+                    std::cout << "POLLERR"<<std::endl;
+                    break;
+                }
+                //std::cout << "poll else (for read)"<<std::endl;
                 int rdstate = read(readJanusPipe, &janus_char, sizeof(janus_char));
+                //std::cout << "poll else (etter read)"<<std::endl;
                 switch (rdstate){
                     case -1:                    
                         if(errno == EAGAIN)                             //Read(): Error handler, if empty 
                         {
                             // TODO This is something that should not happen when we use poll. Poll will guarantee that there is something in the pipe.
                             // - forgot to remove nonblock when splitting the code, need to test without. 
+                            std::cout << "read 1"<<std::endl;
                             break;      
                         }
                         else                                            //Read(): Error handler
                         {
+                             std::cout << "read 2"<<std::endl;
                             perror("Read(); Read from pipe failed, something wrong with pipe");
                             //TODO add a proper exit her, need to close pipe. need to test this. 
                             exit(4);
@@ -509,12 +534,12 @@ namespace Evo_janusXsdm
                     default:                                            //Read(): OK
                         janus_frame+= janus_char; 
 
-                        /*
+                        
                         // For deabug and ez to read janusframe. print janusfram in file        //TODO add option to print janusframe to file, ez to read frame then. 
-                        std::ofstream MyFile ("JANUS_frame.txt", std::ios::app);
-                        MyFile <<janus_char;               
-                        MyFile.close();   
-                        */
+                        std::ofstream MyFile10 ("ost.txt", std::ios::app);
+                        MyFile10 <<janus_char;               
+                        MyFile10.close();   
+                        
 
                         janus_char[1024] ={0};
                         break;

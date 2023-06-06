@@ -56,8 +56,8 @@ janus_simple_rx_new(janus_parameters_t params)
   janus_simple_rx_t simple_rx = JANUS_UTILS_MEMORY_NEW_ZERO(struct janus_simple_rx, 1);
   
 
-  pid_t pidtoexec = getpid();
-  fprintf(stderr, "\n%d:PIDKLARJANUS\n", pidtoexec);
+  //pid_t pidtoexec = getpid();
+  //fprintf(stderr, "\n%d:PIDKLARJANUS\n", pidtoexec);
 
   
   // Initialize verbosity level
