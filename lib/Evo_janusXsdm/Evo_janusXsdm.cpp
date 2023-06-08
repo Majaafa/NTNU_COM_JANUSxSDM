@@ -603,6 +603,7 @@ namespace Evo_janusXsdm
                 }
             }
         }
+        message = "NaN";
         return {"NaN","NaN","NaN","NaN"};
     }
 
