@@ -62,6 +62,4 @@ cd bin
 make
 sudo make install
 ```
-## Problems with the code
 
-## TIPS :)
