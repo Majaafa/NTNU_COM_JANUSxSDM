@@ -52,6 +52,7 @@ git clone https://github.com/evologics/sdmsh.git
 cd sdmsh/
 make
 ```
+(NB! when deleting the SDMSH, the preamble.raw file will also be deleted. Therefore must this file be added to the SDMSH library again.)
 
 Setup and compile the Janus-c-3.0.5 library:
 ```

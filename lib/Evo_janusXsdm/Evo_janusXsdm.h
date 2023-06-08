@@ -31,8 +31,6 @@ namespace Evo_janusXsdm
         //Constructor, takes IPv4 of acoustic modem, paths to janus and sdmsh executables and ports to reserve for janus encoding/decoding
         connection(std::string modemIP, std::string JANUSPATH, std::string SDMPATH, int rxPort, int txPort, float stream_fs);
 
-        void setPHY();//TODO
-
         //2022: Setting correct config on sdm for air test
         int sdmConfigAir();
 
@@ -73,6 +71,7 @@ namespace Evo_janusXsdm
         //RX fam: will listen to the pipe from startRX and return message if recieved or timeout
         std::array<std::string,4> listenRX(int readpipe,std::string &message,int timeout); //will listen to the pipe from startRX and return message if recieved or timeout
 
+        std::string getJanusFrame();
         //Part of RX fam: -> read dokumentation before use 
         //Will crash the RX processes 
         void stopRX();  
@@ -94,6 +93,8 @@ namespace Evo_janusXsdm
 
 
         int JanusFromRawFile();
+        
+        //std::string getJanusframe(std::string janusFrame);
 
         
     };

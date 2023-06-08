@@ -24,7 +24,7 @@ The code below uses the startTX function to transmit the JANUS packets.
 //Constructor parameters for Evo_janusXsdm.h
 std::string JANUSPATH = "../lib/janus-c-3.0.5/bin/";
 std::string SDMPATH = "../lib/sdmsh/";
-std::string IP ="192.168.0.189";
+std::string IP ="192.168.0.198";
 int JANUS_RX_PORT = 9920;
 int JANUS_TX_PORT = 9914;
 float STREAMFS = 250000.0;
@@ -32,6 +32,7 @@ float STREAMFS = 250000.0;
 //Global variables
 std::string myString = "1";
 std::string comment;
+int tall = 0;
 
 int main()
 { 
@@ -46,10 +47,10 @@ int main()
 
     while(true)
     {                                 
-        std::cout <<"Press enter to send message" <<std::endl;
-        std::getline(std::cin,comment);
-        modem.startTX(myString);  
-        myString += "0";
-        //std::this_thread::sleep_for(6000ms);    //interval between sending
+        //std::cout <<"Press enter to send message" <<std::endl;
+        //std::getline(std::cin,comment);
+        modem.startTX(std::to_string(tall));  
+        tall += 1;
+        std::this_thread::sleep_for(6000ms);    //interval between sending
     }
 }

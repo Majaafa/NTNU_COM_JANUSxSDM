@@ -26,7 +26,7 @@ The code below uses the listenOnceRXsimple funtion to reecieve the JANUS packets
 //Constructor parameters for Evo_janusXsdm.h
 std::string JANUSPATH = "../lib/janus-c-3.0.5/bin/";
 std::string SDMPATH = "../lib/sdmsh/";
-std::string IP = "192.168.0.199";
+std::string IP = "192.168.0.189";
 int JANUS_RX_PORT = 9955;
 int JANUS_TX_PORT = 9955;
 float STREAMFS = 250000.0;
@@ -57,6 +57,7 @@ int main()
         std::cout << "\n\nMessage: " << responsFromFrame[0] <<" \n" << "CRC (8 bits): " <<responsFromFrame[1]
         <<" \n" "Cargo size: " <<responsFromFrame[2] <<" \n" "Reservation Time: " <<responsFromFrame[3] 
         <<"\n"<< std::endl;
+        //std::cout << modem.getJanusFrame() << std::endl;
         /*
         std::ofstream MyFile5 ("rx_cargo.txt", std::ios::app);
         MyFile5 <<responsOnce <<"\n";               

@@ -244,7 +244,7 @@ namespace Evo_janusXsdm
         } 
         else //Gen: X
         {
-            std::this_thread::sleep_for(500ms); //Delay needed for sdmsh to establish tcp socket 
+            std::this_thread::sleep_for(1000ms); //Delay needed for sdmsh to establish tcp socket //m
             close(filedes[1]);                  
 
             //Creat fork for running janus process 
@@ -273,7 +273,7 @@ namespace Evo_janusXsdm
                 int nbytes; 
                 struct pollfd pfd; 
                 int timeout = 5000;     // Time before exiting Poll,     (TODO:  can be sett as a optinal variabel. ) 
-
+                int pollhupCount = 0;
                 while(true)//--->
                 {
                     //Wait for janus and sdmsh to exit                      (TODO: can use this to determen if ther is fault in th TX, if we wait to long somting is wrong, use poll 
@@ -304,6 +304,22 @@ namespace Evo_janusXsdm
                     } 
                     else 
                     {
+                        if(pfd.revents & POLLHUP){
+                            //std::cout << "POLLHUP"<< std::endl;
+                            ++pollhupCount;
+                            std::this_thread::sleep_for(100ms); //Delay: let the different processes die 
+                            if (pollhupCount>=30){
+                                std::cout << "Exit on due to POLLHUP (In poll), need to chec if pipe is okay"<< std::endl;
+                                break;
+                            }
+                    
+                        }
+                
+                        if(pfd.revents & POLLERR){
+                            std::cout << "POLLERR"<<std::endl;
+                            break;
+                        }
+
                         ssize_t count = read(filedes[0], buffer, sizeof(buffer));                
                         if(count == -1)
                         {
@@ -394,7 +410,7 @@ namespace Evo_janusXsdm
             else // Gen X-D
             { 
                 //Delay so that ./janus can establish tcp listener  (Establish a tcp socket)
-                std::this_thread::sleep_for(500ms);     
+                std::this_thread::sleep_for(1000ms);     
 
                 //Creating fork for "SDMSH"  
                 pid_t sdmsh_pid= fork();                 
@@ -473,13 +489,15 @@ namespace Evo_janusXsdm
         std::string janus_frame;
         char janus_char[1024] = {};
 
+        int pollhupCount = 0;
+
         struct pollfd pfd; 
         //int timeout = 60000;                    // TODO add this to  optinal variabel.
 
         std::this_thread::sleep_for(500ms);     // TODO we dont need this, need to test without 
 
         while(true)
-        {    
+        { 
             std::array<std::string,4> myArray; 
 
             //Setting up poll() for read from pipe:
@@ -495,7 +513,6 @@ namespace Evo_janusXsdm
             }
             else if (gatekeeper== 0) 
             {
-                std::cout << "poll0"<<std::endl;
                 std::cout << "Exit on timeout (In poll)"<< std::endl;
                 break;
             }
@@ -504,9 +521,17 @@ namespace Evo_janusXsdm
                /*if(pfd.revents & POLLIN){                                             //TODO: switch else with this pollin:)
                     //std::cout << "POLLIN"<< std::endl;
                 }  */ 
+
+                // Error handeling of errors in poll (might be active when someting wrong with pipe)
                 if(pfd.revents & POLLHUP){
-                    std::cout << "POLLHUP"<< std::endl;
-                    break;
+                    //std::cout << "POLLHUP"<< std::endl;
+                    ++pollhupCount;
+                    std::this_thread::sleep_for(100ms); //Delay: let the different processes die 
+                    if (pollhupCount>=10){
+                        std::cout << "Exit on due to POLLHUP (In poll), need to chec if pipe is okay"<< std::endl;
+                        break;
+                    }
+                    
                 }
                 if(pfd.revents & POLLERR){
                     std::cout << "POLLERR"<<std::endl;
@@ -536,14 +561,15 @@ namespace Evo_janusXsdm
 
                         
                         // For deabug and ez to read janusframe. print janusfram in file        //TODO add option to print janusframe to file, ez to read frame then. 
-                        std::ofstream MyFile10 ("ost.txt", std::ios::app);
+                        /*std::ofstream MyFile10 ("JANUS.txt", std::ios::out);
                         MyFile10 <<janus_char;               
-                        MyFile10.close();   
+                        MyFile10.close();   */
                         
 
                         janus_char[1024] ={0};
                         break;
                 }
+                
                 
                 /*
                 //Print different values to file, mainly for debug (Will see buffer size)
@@ -563,6 +589,11 @@ namespace Evo_janusXsdm
                     RT = findInJanusFrame(idRT,janus_frame);
                    
                     myArray= {message,CRC,CargoSize,RT}; 
+
+                    std::ofstream MyFileJanus ("JANUS.txt", std::ios::out);
+                    MyFileJanus <<janus_frame;               
+                    MyFileJanus.close();  
+
                     if(message != "nei")                        // npos error handeling for .find(), if the sring is not found.                     
                     {
                     janus_frame = "";
@@ -613,6 +644,32 @@ namespace Evo_janusXsdm
             return "Unable to find in frame";
         }
     }
+
+    std::string
+    connection::getJanusFrame(){
+        std::string janusframe;
+        std::ifstream myFiled ("JANUS.txt");
+        if(!myFiled.is_open())
+        {
+            std::cout << "no file" <<std::endl;
+            return "no file";
+        } 
+        else 
+        {
+            std::string line;
+
+            while(std::getline(myFiled,line)){
+                janusframe += line + "\n";
+            }
+            myFiled.close();
+
+        }             
+        return janusframe;
+    }
+    
+    
+
+   
 
      //void connection::findNumberOfSamples(std::string message)    //TODO clean up this one, can be used as debug tool. 
     //{
