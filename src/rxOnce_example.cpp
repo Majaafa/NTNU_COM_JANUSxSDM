@@ -57,8 +57,9 @@ int main()
         std::cout << "\n\nMessage: " << responsFromFrame[0] <<" \n" << "CRC (8 bits): " <<responsFromFrame[1]
         <<" \n" "Cargo size: " <<responsFromFrame[2] <<" \n" "Reservation Time: " <<responsFromFrame[3] 
         <<"\n"<< std::endl;
-        //std::cout << modem.getJanusFrame() << std::endl;
+        //std::cout << modem.getJanusFrame() << std::endl; //will print the entire JANUS frame to the terminal
         /*
+        //debug, writes the cargo to file: rx_cargo.txt
         std::ofstream MyFile5 ("rx_cargo.txt", std::ios::app);
         MyFile5 <<responsOnce <<"\n";               
         MyFile5.close();  

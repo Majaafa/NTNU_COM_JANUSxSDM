@@ -71,7 +71,10 @@ namespace Evo_janusXsdm
         //RX fam: will listen to the pipe from startRX and return message if recieved or timeout
         std::array<std::string,4> listenRX(int readpipe,std::string &message,int timeout); //will listen to the pipe from startRX and return message if recieved or timeout
 
+        //will return the entire JANUS frame last received as a string
+        // the JANUS frame is stored in JANUS.txt
         std::string getJanusFrame();
+
         //Part of RX fam: -> read dokumentation before use 
         //Will crash the RX processes 
         void stopRX();  

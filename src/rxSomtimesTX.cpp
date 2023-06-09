@@ -33,7 +33,7 @@ float STREAMFS = 250000.0;
 
 //Global variables
 std::string response;
-int timeout = 500;    //!NB must be small, but should not be zero!
+int timeout = 500;    //NB should be small in this example, but should not be zero!
 int mode = 0;
 std::string myString;
 
@@ -64,14 +64,15 @@ int main()
             
         }
         if(respons == "5"){
-            mode = 2;
+            mode = 1;
         }
         else if (respons=="10"){
             mode = 2;
         }
         
         
-        //add a fetch to topic here! to change the mode to transmitting
+        // if mode is 1, this is in this example when cargo is "5", the modem will be set in sending mode, 
+        // and it will transmitt the message written in the terminal
         if(mode == 1){
             //close pipe and stop listening processes
             modem.closePipeRX(fd_listen);
@@ -81,11 +82,12 @@ int main()
             std::cout <<"Write a message: " <<std::endl;
             std::getline(std::cin,myString);
             modem.startTX(myString); 
-
+            //start processes for receiving
             std::this_thread::sleep_for(500ms);    //500ms break between sending and listening
             fd_listen = modem.startRX();
             std::this_thread::sleep_for(500ms); 
         }
+        // if mode is 2, this is in this example when cargo is "10", the processes and terminal will be stopped
         else if(mode == 2){
             modem.closePipeRX(fd_listen);
             modem.stopRX();
