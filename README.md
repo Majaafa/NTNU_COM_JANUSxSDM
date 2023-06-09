@@ -10,6 +10,8 @@ For this project was VirtualBox used: https://ubuntu.com/tutorials/how-to-run-ub
 (link to algorithm developed in the same project: https://github.com/HaIvor/Optimization)
 
 
+Details about the code and the project can be found on the GitHub wiki to this repository and in the bachelor report.
+
 ## Install
 
 To get started you will need to install the following in the linux terminal:
@@ -62,4 +64,5 @@ cd bin
 make
 sudo make install
 ```
+
 
